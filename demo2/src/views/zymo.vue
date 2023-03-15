@@ -16,8 +16,9 @@
                     {id:1,name:'用户1',sex:'男',email:'1@qq.com'},
                     {id:2,name:'用户2',sex:'男',email:'2@qq.com'},
                     {id:3,name:'用户3',sex:'男',email:'3@qq.com'},
-                    {id:4,name:'用户4',sex:'男',email:'4@qq.com'},
+                    {id:4,name:'用户4',sex:'男',email:'4@qq.com'} 
                 ],
+                //存放需要的数据
                 user:{}
             }
         },
@@ -36,6 +37,23 @@
                     }
                 });
             }
+            // find函数查找对象数组中符合条件的对象元素
+            // 数组.find(item=>{
+            //     return 条件（返回为真的条件代表的内容）
+            // })
+
+            let info =this.users.find(item=>{
+                return item.id==this.$route.params.id
+            });
+            let index =this.users.findIndex(item=>{
+                return item.id==this.$route.params.id
+            });
+            console.log('元素：');
+            console.log(info);
+            console.log('下标：'+index);
+
+
+
             //箭头函数
             const add = (x, y) => x + y;
             console.log(add(2,2))

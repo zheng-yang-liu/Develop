@@ -9,15 +9,15 @@ const routes = [
     path: '/',
     name: 'home',
     meta:{
-      titile:'这是首页'
+      title:'这是首页'
     },
     component: HomeView
     // component:() => import("../views/jsmk.vue")
   },
   {
     // path: '/css/:参数的名字',
-    path: '/css/:userid',
-    name: 'home',
+    path: '/css',
+    name: 'css',
     // component: HomeView
     component:() => import("../views/css.vue")
   },

@@ -4,9 +4,10 @@
         <div class="newslist">
             <div class="newslist-title">最新新闻</div>
             <div class="news-list">
-                <newslist></newslist>
+                <newslist ref="info"></newslist>
             </div>
         </div>
+        <div @click="getinfo">获取值</div>
     </div>
 </template>
 <script>
@@ -14,7 +15,13 @@
     export default{
         components:{
             newslist
+        },
+        methods:{
+            getinfo(){
+                console.log(this.$refs);
+            }
         }
+
     }
 </script>
 

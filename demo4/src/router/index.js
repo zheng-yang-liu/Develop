@@ -12,8 +12,13 @@ const routes = [
   },
   {
     path: '/news',
-    name: 'index',
+    name: 'news',
     component:()=> import("../views/news.vue")
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component:()=> import("../views/list.vue")
   },
 
 ]

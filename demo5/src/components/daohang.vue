@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div>
-            <div class="dingbu-box">
+        <div class="dingbu-box">
                 <img class="dingbu-box-img" src="../assets/image/dingbu.png" alt="">
-            </div>
+        </div>
+        <div class="box">
             <div class="wenzi-box">
                 <div class="wenzi-box-1">您好！欢迎光临众智电子平台</div>
                 <div class="wenzi-box-2">
@@ -19,19 +19,19 @@
         </div>
     </div>
 </template>
-<style>
-    *{
-        margin: 0px;
-        padding: 0px;
+<style scoped>
+    .box{
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        border-bottom: 1px solid gainsboro;
     }
     .dingbu-box-img {
         width: 100%;
         height: 74px;
     }
     .wenzi-box{
-        width: 100%;
-        height: 30px;
-        border-bottom: 1px solid gainsboro;
+        width: 1000px;
         display: flex;
         line-height: 30px;
         font-size: 14px;

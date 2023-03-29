@@ -1,24 +1,53 @@
 <template>
-	<div id="model" v-if="showmodel">
+	<div id="model" v-if="visible">
 		<div class="model-content">
 			<input type="text" v-model="title" placeholder="请输入标题"/>
-			<div @click="close">关闭</div>
-			<div>提交</div>
+			<div>
+				<div @click="close">关闭</div>
+				<div @click="submit">提交</div>
+			</div>
+			
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
+		props:{
+			visible:{
+				type:Boolean,
+				default:false
+			}
+		},
 		data(){
 			return {
 				title:"",
-				showmodel:false
+				showmodel:false,
+				key:-1
+			}
+		},
+		watch:{
+			visible(newvalue,oldvalue){
+				if(newvalue == false){
+					this.title = "";
+					this.key=-1;
+				}
 			}
 		},
 		methods:{
 			close(){
-				this.showmodel = false;
+				// this.showmodel = false;
+				//调用父组件的关闭
+				this.$emit("close");
+			},
+			submit(){
+				if(this.key==-1){
+					this.$emit("add",this.title)
+				}else{
+					this.$emit("edit",{title:this.title,key:this.key})
+				}
+				
+				this.title =""
 			}
 		}
 	}

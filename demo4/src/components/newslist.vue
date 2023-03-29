@@ -28,6 +28,17 @@
             inti(name,num){
                 console.log(name);
                 console.log(num);
+            },
+            sendname(){
+                console.log('子的方法被执行了');
+                //告诉复方法被触发
+                // this.$emit("方法名字（自己取）",传值变量可省略)
+                // this.$emit("childsend");
+                this.$emit("childsend",this.childName);
+                // this.$emit("childsend",this.childName,this.num);
+            
+            
+            
             }
         }
     }

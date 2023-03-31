@@ -1,25 +1,38 @@
 <template>
     <div>
-        <div class="title">新闻列表</div>
+        <div class="title">首页</div>
         <div class="newslist">
             <div class="newslist-title">最新新闻</div>
             <div class="news-list">
-                <newslist ref="info"></newslist>
+                <newslist 
+                    v-for="item in 5" 
+                    :key="item" 
+                    :num="item"
+                    :name="fatherNanme">
+                </newslist>
             </div>
         </div>
-        <div @click="getinfo">获取值</div>
+        <div style="color: red;" @click="fatherNanme='王五'">更改name{{ fatherNanme }}</div>
+        <div class="newslist">
+            <div class="newslist-title">推荐新闻</div>
+            <div class="news-list">
+                <newslist></newslist>
+            </div>
+        </div>
+        <router-link to="/news">更多新闻》</router-link>
+        
     </div>
 </template>
 <script>
     import newslist from'@/components/newslist.vue'
     export default{
+        data(){
+            return{
+                fatherNanme:"张三"
+            }
+        },
         components:{
             newslist
-        },
-        methods:{
-            getinfo(){
-                console.log(this.$refs);
-            }
         }
     }
 </script>

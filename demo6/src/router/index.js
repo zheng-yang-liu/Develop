@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component:()=> import("../views/index.vue")
+    component:()=> import("../views/sass.vue")
   },
   {
     path: '/news',

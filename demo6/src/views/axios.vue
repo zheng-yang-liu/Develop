@@ -41,7 +41,7 @@
         },
         created(){
             axios
-            .get("http://t.weather.sojson.com/api/weather/city/101030100")
+            .get("http://t.weather.sojson.com/api/weather/city/101010100")
             .then(res=>{
                 if(res.data.status==200){
                     this.info=res.data;

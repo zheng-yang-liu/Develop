@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component:()=> import("../views/axios.vue")
+    component:()=> import("../views/login.vue")
   },
   {
     path: '/news',
@@ -19,6 +19,11 @@ const routes = [
     path: '/list',
     name: 'list',
     component:()=> import("../views/list.vue")
+  },
+  {
+    path: '/weblogin',
+    name: 'weblogin',
+    component:()=> import("../views/weblogin.vue")
   },
 
 ]

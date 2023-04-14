@@ -116,7 +116,18 @@
         },
         methods:{
             getData(){
-                -````
+                axios.post("http://api.88gcc.cn/index.php/api/goods/craftLists",{
+                craft_type: this.leixing,
+                fahuo_area: this.value,
+                lingyu:this.lingyuName,
+                page: this.page,
+                shop_type:this.type,
+                sort: this.sort,
+                }).then(res=>{
+                    this.list = res.data.data.data;
+                    this.total_page = res.data.data.last_page;
+                    console.log(res);
+                });
             },
             // 改变页数改变数据
             changepage(page){

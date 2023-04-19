@@ -36,12 +36,12 @@
                     {city:"北京",city_id:"101010100"},
                     {city:"重庆",city_id:"101040100"},
                 ],
-                activeIndex: -1
+                activeIndex: 0
             }
         },
         created(){
             axios
-            .get("http://t.weather.sojson.com/api/weather/city/101010100")
+            .get("http://t.weather.sojson.com/api/weather/city/101030100")
             .then(res=>{
                 if(res.data.status==200){
                     this.info=res.data;

@@ -33,6 +33,22 @@
             <span @click="changepaixu(1)" :style="sort==1?'color:red':''">最新发布</span>
             <span @click="changepaixu(2)" :style="sort==2?'color:red':''">人气排序</span>
         </div>
+        <!-- el-element-ui分页 -->
+        <el-pagination
+            :background="true"
+            :page-size="pageSize"
+            :total="total"
+            layout="sizes,prev,pager,next,jumper,total,slot"
+            @size-change="changesize"
+            @current-change="changepage"
+        >
+        </el-pagination>
+
+
+
+
+
+
 
         <div class="list">
             <div class="item" v-for="item in list" :key="item.id">
@@ -46,18 +62,34 @@
 			<span v-if="page == 1">上一页</span>
 			<span v-else @click="changepage(page-1)">上一页</span>
             <template v-if="total_page > 5">
+
                 <span v-if="page <= 3 && total_page>=5">
-                    <a v-for="item in 5" @click="changepage(item)"  :style="page==item?'color:red':''">{{item}}</a>
+                    <a v-for="item in 5" 
+                    @click="changepage(item)"  
+                    :style="page==item?'color:red':''"
+                    >{{item}}</a>
                 </span>
+
                 <span v-if="page >3 && page < total_page-2">
-                    <a v-for="item in 5" @click="changepage(page - 3 + item)" :style="page==(page - 3 + item)?'color:red':''">{{ page - 3 + item }}</a>
+                    <a v-for="item in 5" 
+                    @click="changepage(page - 3 + item)" 
+                    :style="page==(page - 3 + item)?'color:red':''"
+                    >{{ page - 3 + item }}</a>
                 </span>
+
                 <span v-if="page >=total_page-2">
-                    <a v-for="item in 5" @click="changepage(total_page-5+item)" :style="page==(total_page-5+item)?'color:red':''"> {{ total_page-5+item }}</a>
+                    <a v-for="item in 5" 
+                    @click="changepage(total_page-5+item)" 
+                    :style="page==(total_page-5+item)?'color:red':''"
+                    > {{ total_page-5+item }}</a>
                 </span>
+
             </template>
             <span v-else >
-                <a v-for="item in total_page" @click="changepage(item)" :style="page==item?'color:red':''">{{ item }}</a>
+                <a v-for="item in total_page" 
+                @click="changepage(item)" 
+                :style="page==item?'color:red':''"
+                >{{ item }}</a>
             </span>
 			
 			<span v-if="page == total_page">下一页</span>
@@ -86,6 +118,9 @@
                 value:'',
                 type:'',
                 sort:'',
+                pageSize:10,
+                total:0,
+
 
             }
         },
@@ -117,15 +152,18 @@
         methods:{
             getData(){
                 axios.post("http://api.88gcc.cn/index.php/api/goods/craftLists",{
-                craft_type: this.leixing,
-                fahuo_area: this.value,
-                lingyu:this.lingyuName,
-                page: this.page,
-                shop_type:this.type,
-                sort: this.sort,
+                    craft_type: this.leixing,
+                    fahuo_area: this.value,
+                    lingyu:this.lingyuName,
+                    page: this.page,
+                    shop_type:this.type,
+                    sort: this.sort,
+                    pageSize:this.pageSize,
+
                 }).then(res=>{
                     this.list = res.data.data.data;
                     this.total_page = res.data.data.last_page;
+                    this.total = res.data.data.total;
                     console.log(res);
                 });
             },
@@ -162,6 +200,12 @@
             // 改变排序改变数据
             changepaixu(sort){
                 this.sort=sort;
+                this.page=1;
+                this.getData();
+            },
+
+            changesize(e){
+                this.pageSize=e;
                 this.page=1;
                 this.getData();
             }

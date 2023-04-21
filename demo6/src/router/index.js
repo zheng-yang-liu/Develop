@@ -25,6 +25,11 @@ const routes = [
     name: 'weblogin',
     component:()=> import("../views/weblogin.vue")
   },
+  {
+    path: '/pro',
+    name: 'pro',
+    component:()=> import("../views/pro.vue")
+  },
 
 ]
 

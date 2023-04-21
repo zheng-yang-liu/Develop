@@ -88,16 +88,19 @@
                 .then(res=>{
                     // console.log(res);
                     if(res.data.code == 200){
-
+                        // 存储本地token
+                        localStorage.setItem('token',res.data.data.access_token);
+                        // 跳转到其他项目
+                        this.$router.push("/pro")
                     }else{
                         this.getimg();
                         this.$message.error(res.data.msg);
                     }
                 })
                 // 重新赋值
-                this.admin=''
-                this.code=''
-                this.password=''
+                // this.admin=''
+                // this.code=''
+                // this.password=''
             }
         }
 

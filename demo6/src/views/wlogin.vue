@@ -74,6 +74,7 @@
             changeimg(){
                 this.getimg();
             },
+
             qingqiu(){
                 axios.post('http://49.233.9.167:3002/auth/login',{
                     // code：验证码 
@@ -133,7 +134,6 @@
         transform: translate(-50%,-50%); */
         width: 300px;
         height: 350px;
-
         margin-bottom: 10px;
         box-sizing: border-box;
     }

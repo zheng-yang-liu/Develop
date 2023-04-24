@@ -70,6 +70,7 @@
         
         </div>
         <add ref="add" @getlist="page=1,getData()"></add>
+        
     </div>
 </template>
 

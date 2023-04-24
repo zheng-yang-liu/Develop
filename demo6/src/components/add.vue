@@ -6,11 +6,6 @@
             :visible.sync="dialogVisible"
             width="500px"
             >
-            
-
-
-
-
             <el-form ref="form" :model="form" size="mini" label-width="100px">
                 <el-form-item label="项目名称">
                     <el-input v-model="form.name"></el-input>
@@ -27,13 +22,9 @@
                     </el-select>
                 </el-form-item>
                 
-
-
-
                 <el-form-item label="项目编号">
                     <el-input v-model="form.projectNo"></el-input>
                 </el-form-item>
-
 
                 <el-form-item label="项目开始时间">
                     <el-date-picker
@@ -70,9 +61,7 @@
                     <el-radio v-model="form.status" label="0">启用</el-radio>
                     <el-radio v-model="form.status" label="1">禁用</el-radio>
                 </template>
-                
-            
-            
+
             </el-form>
 
 
@@ -85,16 +74,11 @@ projectNo:项目编号
 projectStartDate:项目开始时间
 status:状态(0-正常,1-禁用) -->
 
-
-
-
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false">取 消</el-button>
                 <el-button type="primary" @click="pushData">确 定</el-button>
             </span>
         </el-dialog>
-
-
 
     </div>
 </template>
@@ -139,7 +123,6 @@ status:状态(0-正常,1-禁用) -->
                 let token =localStorage.getItem('token');
                 axios.post('http://49.233.9.167:3002/order/project',{
                     implementEndDate:this.form.implementEndDate,
-
                     implementStartDate:this.form.implementStartDate,
                     leaderUserId:this.form.leaderUserId,
                     name:this.form.name,

@@ -47,6 +47,7 @@
 <script>
     // import axios from 'axios'
     import request from '@/utils/request'
+    
     export default{
         data(){
             return{
@@ -60,7 +61,19 @@
         },
         created(){
             this.getimg();
+
         },
+        
+        mounted() {
+            document.addEventListener('keydown', this.handleEnterKey)
+        },
+        beforeDestroy() {
+            document.removeEventListener('keydown', this.handleEnterKey)
+        },
+
+
+
+
         methods:{
             getimg(){
                 request.get('http://49.233.9.167:3002/code')
@@ -75,7 +88,12 @@
             changeimg(){
                 this.getimg();
             },
-
+            handleEnterKey(event) {
+                if (event.keyCode === 13) {
+                // 处理回车键按下时要执行的代码
+                    this.qingqiu();
+                }
+            },
             qingqiu(){
                 request.post('http://49.233.9.167:3002/auth/login',{
                     // code：验证码 
@@ -98,7 +116,9 @@
                 // this.code=''
                 // this.password=''
             }
-        }
+            
+        },
+        
 
     }
 </script>

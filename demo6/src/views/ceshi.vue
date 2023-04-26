@@ -1,26 +1,30 @@
 <template>
-
+    <div>
+    <input type="text" v-model="inputValue">
+    </div>
 </template>
-
+    
 <script>
-    import axios from "axios";
-    export default{
-        created(){
-            axios.post("http://api.88gcc.cn/index.php/api/goods/craftLists",{
-                craft_type: 2,
-
-                fahuo_area: "130000",
-                lingyu: "煤矸石",
-                page: 1,
-                shop_type:1,
-                sort: 1,
-
-
-                }).then(res=>{
-                    this.list = res.data.data.data;
-                    this.total_page = res.data.data.last_page;
-                    console.log(res);
-                });
+    export default {
+        data() {
+            return {
+                inputValue: ''
+            }
+        },
+        mounted() {
+            document.addEventListener('keydown', this.handleEnterKey)
+        },
+        beforeDestroy() {
+            document.removeEventListener('keydown', this.handleEnterKey)
+        },
+        methods: {
+            handleEnterKey(event) {
+                if (event.keyCode === 13) {
+                // 处理回车键按下时要执行的代码
+                console.log(`Input value is ${this.inputValue}`)
+                }
+            }
         }
     }
 </script>
+    

@@ -45,7 +45,8 @@
 </template>
 
 <script>
-    import axios from 'axios'
+    // import axios from 'axios'
+    import request from '@/utils/request'
     export default{
         data(){
             return{
@@ -62,13 +63,13 @@
         },
         methods:{
             getimg(){
-                axios.get('http://49.233.9.167:3002/code')
+                request.get('http://49.233.9.167:3002/code')
                 .then(res=>{
                     // console.log(res);
                     // console.log(res.data.data.img);
                     // console.log(res.data.data.uuid);
-                    this.uuid=res.data.data.uuid
-                    this.img_src=res.data.data.img
+                    this.uuid=res.data.uuid
+                    this.img_src=res.data.img
                 });
             },
             changeimg(){
@@ -76,7 +77,7 @@
             },
 
             qingqiu(){
-                axios.post('http://49.233.9.167:3002/auth/login',{
+                request.post('http://49.233.9.167:3002/auth/login',{
                     // code：验证码 
                     code:this.code,
                     // password：密码
@@ -87,16 +88,10 @@
                     uuid:this.uuid,
                 })
                 .then(res=>{
-                    // console.log(res);
-                    if(res.data.code == 200){
-                        // 存储本地token
-                        localStorage.setItem('token',res.data.data.access_token);
-                        // 跳转到其他项目
-                        this.$router.push("/pro")
-                    }else{
-                        this.getimg();
-                        this.$message.error(res.data.msg);
-                    }
+                    // 存储本地token
+                    localStorage.setItem('token',res.data.access_token);
+                    // 跳转到其他项目
+                    this.$router.push("/pro")
                 })
                 // 重新赋值
                 // this.admin=''

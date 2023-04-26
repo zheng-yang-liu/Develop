@@ -76,7 +76,8 @@
 
 
 <script>
-    import axios from 'axios'
+    // import axios from 'axios'
+    import request from '@/utils/request'
     import add from '../components/add.vue'
     export default {
         components:{
@@ -97,34 +98,22 @@
         methods:{
             // 请求参数
             getData(){
-                let token =localStorage.getItem('token');
                 // console.log(token);
-                axios.get('http://49.233.9.167:3002/order/project/list',{
+                request.get('http://49.233.9.167:3002/order/project/list',{
                     params:{
                         // 实际的get传参
                         pageNum:this.page,
                         pageSize:this.pageSize,
                         name:''
-                    },
-                    headers:{
-                        Authorization:token,
                     }
                 }).then(res=>{
-                    if(res.data.code == 401){
-                        localStorage.removeItem('token');
-                        this.$router.push('/')
-                    }else if(res.data.code == 200){
-                        // console.log(res);
-                        this.list = res.data.rows;
-                        // 获取总页数
-                        this.total = res.data.total;
-                        // console.log(this.total);
-                    }else{
-                        this.$message.error(res.data.msg)
-                    }
+                    // console.log(res);
+                    this.list = res.rows;
+                    // 获取总页数
+                    this.total = res.total;
+                    // console.log(this.total);
                 })
-                },
-
+            },
             changesize(e){
                 this.pageSize=e;
                 this.page=1;
@@ -136,8 +125,7 @@
             },
             // 添加参数
             addData(){
-                this.$refs.add.info();
-                
+                this.$refs.add.info();                
             }
         }
     }

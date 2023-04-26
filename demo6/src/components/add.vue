@@ -84,7 +84,8 @@ status:状态(0-正常,1-禁用) -->
 </template>
 
 <script>
-    import axios from "axios";
+    // import axios from "axios";
+    import request from '@/utils/request'
     export default {
         data(){
             return {
@@ -100,28 +101,16 @@ status:状态(0-正常,1-禁用) -->
         methods:{
             info(){
                 this.dialogVisible  = true;
-                let token =localStorage.getItem('token');
                 // 请求项目负责人的数据
-                axios.get('http://49.233.9.167:3002/system/user/getSelectList',{
-                headers:{
-                        Authorization:token,
-                    }
-                }).then(res=>{
-                    if(res.data.code == 401){
-                        localStorage.removeItem('token');
-                        this.$router.push('/')
-                    }else if(res.data.code == 200){
-                        console.log(res.data.data);
-                        this.userList=res.data.data;
-                    }else{
-                        this.$message.error(res.data.msg)
-                    }
+                request.get('http://49.233.9.167:3002/system/user/getSelectList').then(res=>{
+                    console.log(res.data.data);
+                    this.userList=res.data;
                 })
             },
             // 传递数据
             pushData(){
-                let token =localStorage.getItem('token');
-                axios.post('http://49.233.9.167:3002/order/project',{
+                
+                request.post('http://49.233.9.167:3002/order/project',{
                     implementEndDate:this.form.implementEndDate,
                     implementStartDate:this.form.implementStartDate,
                     leaderUserId:this.form.leaderUserId,
@@ -130,23 +119,12 @@ status:状态(0-正常,1-禁用) -->
                     projectNo:this.form.projectNo,
                     projectStartDate:this.form.projectStartDate,
                     status:this.form.status ,
-                },{
-                    headers:{
-                        Authorization:token,
-                    }
                 }).then(res=>{
-                    if(res.data.code == 401){
-                        localStorage.removeItem('token');
-                        this.$router.push('/')
-                    }else if(res.data.code == 200){
-                        this.dialogVisible=false;
-                        this.form={};
-                        this.$emit("getlist");
-                        // this.$refs.add.$emit('getlist');
-                    }else{
-                        this.$message.error(res.data.msg)
-                    }
-                });
+                    this.dialogVisible=false;
+                    this.form={};
+                    this.$emit("getlist");
+                    // this.$refs.add.$emit('getlist');
+            });
                 
 
             }

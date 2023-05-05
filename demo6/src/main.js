@@ -12,6 +12,7 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
+// 使用store
 new Vue({
   router,
   store,

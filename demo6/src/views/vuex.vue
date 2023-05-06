@@ -28,7 +28,7 @@
             console.log("使用生命周期函数调用getters"+this.$store.getters.userID);
             console.log("返回函数题经行返回值"+this.$store.getters.setAge(10));
             // $store.commit(tape函数名称,改变的值)
-            this.$store.commit('setName','李四')
+            this.$store.commit('setName','李四') 
         },
         // 自定义函数位置
         methods:{

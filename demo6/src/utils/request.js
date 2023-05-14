@@ -4,7 +4,7 @@ import router from "@/router"
 import elementUI from "element-ui"
 
 // 实例化
-
+//创建一个axios实例如果在5秒内未响应，请求被取消
 const a= axios.create({
     timeout:5*1000
 })

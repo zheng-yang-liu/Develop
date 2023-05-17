@@ -52,13 +52,13 @@ methods(){
 
 ### v-X使用
 
-v-model双向动态数据绑定，多用于网页输入数据的绑定
+**v-mode**l双向动态数据绑定，多用于网页输入数据的绑定
 
 ```
 <div v-model="数据"></div>
 ```
 
-v-bind单向动态数据绑定，多用于标签属性的动态绑定
+**v-bind**单向动态数据绑定，多用于标签属性的动态绑定
 
 ```
 主要用于属性绑定，比如class属性，style属性，value属性，href属性等等，只要是属性，就可以用v-bind指令进行绑定。v-bind:有一个对应的语法糖，也就是简写方式 :属性名
@@ -74,3 +74,14 @@ v-bind单向动态数据绑定，多用于标签属性的动态绑定
  <div :class="inner">我是inner</div>
 ```
 
+**v-if v-else**条件选择，用于同类型元素不同条件触发
+
+```
+<div v-for="index in 5">
+	<div v-if="index>3">当index大于3时输出这个div</div>
+	<div v-else>当index小于等于3时输出这个div</div>
+</div>
+
+```
+
+v-on

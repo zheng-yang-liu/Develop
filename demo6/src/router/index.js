@@ -8,12 +8,12 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component:()=> import("../views/vuex.vue")
+    component:()=> import("../views/bind.vue")
   },
   {
-    path: '/news',
-    name: 'news',
-    component:()=> import("../views/news.vue")
+    path: '/ceshi',
+    name: 'ceshi',
+    component:()=> import("../views/ceshi.vue")
   },
   {
     path: '/list',

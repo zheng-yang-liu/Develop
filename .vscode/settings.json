@@ -4,6 +4,7 @@
         "alterinfo",
         "axios",
         "ceshi",
+        "ceshidata",
         "changeclass",
         "changedizhi",
         "changeimg",
@@ -20,6 +21,7 @@
         "datas",
         "daygrid",
         "dianhua",
+        "dianji",
         "dingbu",
         "dizhi",
         "dumiao",
@@ -45,6 +47,8 @@
         "mouseup",
         "Nanme",
         "newage",
+        "newdianji",
+        "newme",
         "newslist",
         "newvalue",
         "nihao",
@@ -73,6 +77,7 @@
         "wenzi",
         "wlogin",
         "xiougai",
+        "zhangsan",
         "zymo"
     ]
 }

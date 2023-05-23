@@ -8,10 +8,10 @@ const routes = [
   {
     path: '/',
     name: 'index',
-    component:()=> import("../views/bind.vue")
+    component:()=> import("../views/ceshi.vue")
   },
   {
-    path: '/ceshi',
+    path: '/ceshi/:param1/:param2',
     name: 'ceshi',
     component:()=> import("../views/ceshi.vue")
   },

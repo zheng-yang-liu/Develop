@@ -7,18 +7,13 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'index',
-    component:()=> import("../views/ceshi.vue")
+    name: 'bind',
+    component:()=> import("../views/bind.vue")
   },
   {
-    path: '/ceshi/:param1/:param2',
+    path: '/ceshi',
     name: 'ceshi',
     component:()=> import("../views/ceshi.vue")
-  },
-  {
-    path: '/list',
-    name: 'list',
-    component:()=> import("../views/list.vue")
   },
   {
     path: '/weblogin',

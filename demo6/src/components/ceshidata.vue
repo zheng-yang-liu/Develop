@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>测试组件数据传递--子组件</h1>
+        <h1>我是组件的内容</h1>
+        <slot name="header" :data='SlotDta' :data2='SlotDta2'></slot>
     </div>
 </template>
 
@@ -8,16 +9,8 @@
     export default {
         data(){
             return{
-                childUser:{
-                    name:'zhangsan',
-                    age:20
-                }
-            }
-        },
-        methods:{
-            childDianji(){
-                this.$message.success("我是子组件的dianji事件");
-                // this.$message.error("我是子组件的dianji事件")
+                SlotDta:'我是子组件传递的内容',
+                SlotDta2:'我是子组件传递的内容2'
             }
         }
     }

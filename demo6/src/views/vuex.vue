@@ -2,7 +2,7 @@
     <div>
         <h1>Vuex状态管理 </h1>
         <div>全局调用:{{$store.state.name}}</div>
-        <div>局部调用:{{name}}、{{userinfo.age}}</div>
+        <div>局部调用:{{name}}{{userinfo.age}}</div>
 
         <h2>getters</h2>
         <div>全局调用:{{$store.getters.userID}}</div>

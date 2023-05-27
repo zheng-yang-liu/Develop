@@ -78,9 +78,6 @@
             getimg(){
                 request.get('http://49.233.9.167:3002/code')
                 .then(res=>{
-                    // console.log(res);
-                    // console.log(res.data.data.img);
-                    // console.log(res.data.data.uuid);
                     this.uuid=res.data.uuid
                     this.img_src=res.data.img
                 });

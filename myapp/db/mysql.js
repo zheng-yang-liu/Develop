@@ -6,6 +6,6 @@ var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'mysql6zy13172',
-  database: 'node',
+  database: 'vuedata',
 })
 module.exports = connection;

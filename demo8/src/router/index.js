@@ -7,8 +7,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'tomysql',
-    component:()=> import("../views/tomysql.vue")
+    name: 'login',
+    component:()=> import("../views/login.vue")
   },
   
 ]

@@ -2,42 +2,78 @@ var express = require('express')
 var router = express.Router()
 var md5 = require('md5-node')
 //引入MySQL
-var connection = require('../db/mysql')
-/* GET users listing. */
-router.post('/', function (req, res, next) {
-  // 接收参数Content-Type:application/x-www-form-urlencoded
-  var data = req.body
-  // 验证参数
-    // 验证昵称
-  if (data.nickname == '') {
-      res.json({ code: 100, msg: '请输入昵称', data: null });
-    }
-    // 验证手机
-    if (data.phone == '') {
-      res.json({ code: 100, msg: '请输入手机号', data: null })
-    }
-    if (/^1\d{10}$/.test(data.phone) == false) { 
-        res.json({ code: 100, msg: '请输入正确的手机号', data: null })
-    }
-    if (data.password == '') {
-      res.json({ code: 100, msg: '请输入密码', data: null })
-    }
-  // 密码加密
-    var password = md5(data.password)
+var sqlQuery = require('../db/mysql')
 
-  // 插入数据 insert into
-    var insertIntoSql = 'insert into user(nickname,phone,password) values(?,?,?)';
-    connection.query(
-      insertIntoSql,
-      [data.nickname, data.phone,password],
-        function (error, result, filed) {
-            if (error == null) {
-              res.json({code:200,message:'注册成功',data:null})
-            } else {
-                res.json({ code:100,message:'注册失败 请重试',data:error })
-          }
-      }
-    )
+//设置跨域请求
+router.all('*', function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild'
+  )
+  res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+  res.header('X-Powered-By', ' 3.2.1')
+  res.header('Content-Type', 'application/json;charset=utf-8')
+  next()
+})
+/* GET users listing. */
+router.post('/', async function (req, res, next) {
+  // !接收参数Content-Type:application/x-www-form-urlencoded
+  var data = req.body
+  // !验证参数
+  // 验证昵称
+  // !使用return退出函数否则会出现错误res.json
+  if (data.nickname == '') {
+    return res.json({ code: 100, msg: '请输入昵称', data: null })
+  }
+  // 验证手机
+  if (data.phone == '') {
+    return res.json({ code: 100, msg: '请输入手机号', data: null })
+  }
+  if (/^1\d{10}$/.test(data.phone) == false) {
+    return res.json({ code: 100, msg: '请输入正确的手机号', data: null })
+  }
+  if (data.password == '') {
+    return res.json({ code: 100, msg: '请输入密码', data: null })
+  }
+  if (data.password2 == '') {
+    return res.json({ code: 100, msg: '请输入确认密码', data: null })
+  }
+  if (data.password != data.password2) {
+    return res.json({
+      code: 100,
+      msg: '两次输入的密码不同 请重新输入',
+      data: null,
+    })
+  }
+
+  // 密码加密
+  var password = md5(data.password)
+
+  // 加密token 用户的唯一标识(nickname+password)
+  var token = md5(data.nickname + password)
+  // !查询和修改数据
+  // 验证手机号是否已经注册
+  var selectSql = 'select * from user where phone = ?'
+  var selectPhone = await sqlQuery(selectSql, [data.phone])
+  // res.json(selectPhone);
+  if (selectPhone.length > 0) {
+    return res.json({ code: 100, msg: '该手机号已经之注册 请重试', data: null })
+  } else {
+    var insertIntoSql =
+      'insert into user(nickname,phone,password,token) values(?,?,?,?)'
+    var insertIntoData = await sqlQuery(insertIntoSql, [
+      data.nickname,
+      data.phone,
+      password,
+      token,
+    ])
+    if (insertIntoData.affectedRows == 1) {
+      return res.json({ code: 200, msg: '注册成功 请登录', data: null })
+    } else {
+      return res.json({ code: 100, msg: '注册失败 请重试', data: error })
+    }
+  }
 })
 
 module.exports = router

@@ -8,4 +8,18 @@ var connection = mysql.createConnection({
   password: 'mysql6zy13172',
   database: 'vuedata',
 })
-module.exports = connection;
+// 更换同步操作
+var sqlQuery = function (sql,values) { 
+  return new Promise(function (resolve, reject) { 
+    connection.query(sql,values, function (error, result, filed) {
+      if (error == null) {
+        resolve(result);
+      } else {
+        reject(error);
+      }
+    })
+  })
+}
+  
+
+module.exports = sqlQuery

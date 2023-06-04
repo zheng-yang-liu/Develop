@@ -3,10 +3,21 @@ var router = express.Router()
 var md5 = require('md5-node')
 //引入MySQL
 var sqlQuery = require('../db/mysql')
-
+//设置跨域请求
+router.all('*', function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild'
+  )
+  res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+  res.header('X-Powered-By', ' 3.2.1')
+  res.header('Content-Type', 'application/json;charset=utf-8')
+  next()
+})
 
 /* GET users listing. */
-router.post('/login', async function (req, res, next) {
+router.post('/', async function (req, res, next) {
   // !接收数据
   var data = req.body
   //   res.json(data)

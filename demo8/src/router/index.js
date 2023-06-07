@@ -7,10 +7,19 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'login',
-    component:()=> import("../views/login.vue")
+    name: 'publish',
+    component: () => import('../views/publish.vue'),
   },
-  
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login.vue'),
+  },
+  {
+    path: '/',
+    name: 'register',
+    component: () => import('../views/register.vue'),
+  },
 ]
 
 const router = new VueRouter({

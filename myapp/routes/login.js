@@ -36,11 +36,15 @@ router.post('/', async function (req, res, next) {
   //selectPhone 根据手机号进行查询
   var selectPhone = 'select * from user where phone = ? and status != 3'
   var userData = await sqlQuery(selectPhone, [data.phone])
+  // return res.json({userData })
+  if (userData.status == false) {
+    return res.json({ userData })
+  }
   // 如果长度为0 code：100 请注册
-  if (userData.length == 0) {
+  if (userData.data.length == 0) {
     return res.json({ code: 100, msg: '手机号未注册 请注册', data: null })
   } else {
-    var userInfo = userData[0]
+    var userInfo = userData.data[0]
     if (userInfo.status == 2) {
       return res.json({ code: 100, msg: '当前账号禁止登录', data: null })
     }
@@ -53,7 +57,7 @@ router.post('/', async function (req, res, next) {
     } else {
       return res.json({
         code: 100,
-        msg: '账号和密码错误 请重新输入',
+        msg: '账号或密码错误 请重新输入',
         data: null,
       })
     }

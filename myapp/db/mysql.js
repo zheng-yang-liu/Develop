@@ -9,17 +9,16 @@ var connection = mysql.createConnection({
   database: 'vuedata',
 })
 // 更换同步操作
-var sqlQuery = function (sql,values) { 
-  return new Promise(function (resolve, reject) { 
-    connection.query(sql,values, function (error, result, filed) {
+var sqlQuery = function (sql, values) {
+  return new Promise(function (resolve, reject) {
+    connection.query(sql, values, function (error, result, filed) {
       if (error == null) {
-        resolve(result);
+        resolve({ status: true, data: result })
       } else {
-        reject(error);
+        resolve({ status: false, data: error })
       }
     })
   })
 }
-  
 
 module.exports = sqlQuery

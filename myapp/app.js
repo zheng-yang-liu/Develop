@@ -8,6 +8,7 @@ var usersRouter = require('./routes/users')
 var register = require('./routes/register')
 var login = require('./routes/login')
 var selectLink = require('./routes/selectLink')
+var selectContent = require('./routes/selectContent')
 
 var app = express()
 
@@ -22,5 +23,6 @@ app.use('/users', usersRouter)
 app.use('/register', register)
 app.use('/login', login)
 app.use('/selectLink', selectLink)
+app.use('/selectContent', selectContent)
 
 module.exports = app

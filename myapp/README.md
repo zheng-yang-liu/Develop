@@ -8,6 +8,14 @@
 
 接收参数
 
+nickname：昵称
+
+phone：手机号
+
+password：密码
+
+password2：确认密码
+
 验证参数
 
 ​	验证昵称不为空
@@ -31,6 +39,10 @@ md5密码加密（password）
 ## 登录逻辑
 
 接收参数
+
+phone：手机号
+
+password：密码
 
 验证参数
 

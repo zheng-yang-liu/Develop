@@ -38,7 +38,7 @@ router.post('/', async function (req, res, next) {
   var userData = await sqlQuery(selectPhone, [data.phone])
   // return res.json({userData })
   if (userData.status == false) {
-    return res.json({ userData })
+   return res.json({ code: 100, msg: '系统错误', data: userData })
   }
   // 如果长度为0 code：100 请注册
   if (userData.data.length == 0) {

@@ -20,16 +20,18 @@ router.all('*', function (req, res, next) {
 })
 /* GET users listing. */
 router.post('/', async function (req, res, next) {
+  //!返回文章分类数据
   // 查询数据
-  var selectLink = 'select * from link'
-  var selectLinkData = await sqlQuery(selectLink)
-  // return res.json({selectLinkData })
-  if (selectLinkData.status == false) {
-    return res.json({ code: 100, msg: '系统错误', data: selectLinkData })
+  var selectCateList = 'select * from cate'
+
+  var selectListData = await sqlQuery(selectCateList)
+  // return res.json({selectListData })
+  if (selectListData.status == false) {
+    return res.json({ code: 100, msg: '系统错误', data: selectListData })
   }
-  // return res.json(selectLinkData)
-  if (selectLinkData.data.length > 0) {
-    return res.json({ code: 200, msg: '请求成功', data: selectLinkData.data })
+  // return res.json(selectListData)
+  if (selectListData.data.length > 0) {
+    return res.json({ code: 200, msg: '请求成功', data: selectListData.data })
   } else {
     return res.json({ code: 100, msg: '请求失败', data: null })
   }

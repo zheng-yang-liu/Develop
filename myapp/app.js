@@ -9,6 +9,8 @@ var register = require('./routes/register')
 var login = require('./routes/login')
 var selectLink = require('./routes/selectLink')
 var selectContent = require('./routes/selectContent')
+var selectContentList = require('./routes/selectContentList')
+var selectCategorizedList = require('./routes/selectCategorizedList')
 
 var app = express()
 
@@ -24,5 +26,7 @@ app.use('/register', register)
 app.use('/login', login)
 app.use('/selectLink', selectLink)
 app.use('/selectContent', selectContent)
+app.use('/selectContentList', selectContentList)
+app.use('/selectCategorizedList', selectCategorizedList)
 
 module.exports = app

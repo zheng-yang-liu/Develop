@@ -60,7 +60,7 @@ router.post('/', async function (req, res, next) {
   var selectPhone = await sqlQuery(selectSql, [data.phone])
   // return res.json({selectPhone })
   if (selectPhone.status == false) {
-    return res.json({ selectPhone })
+    return res.json({ code: 100, msg: '系统错误', data: selectPhone })
   }
   // res.json(selectPhone);
   if (selectPhone.data.length > 0) {
@@ -85,7 +85,7 @@ router.post('/', async function (req, res, next) {
     ])
     // return res.json({insertIntoData })
     if (insertIntoData.status == false) {
-      return res.json({ insertIntoData })
+      return res.json({ code: 100, msg: '系统错误', data: insertIntoData })
     }
     if (insertIntoData.data.affectedRows == 1) {
       return res.json({ code: 200, msg: '注册成功 请登录', data: null })

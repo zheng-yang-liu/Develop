@@ -20,12 +20,16 @@ router.all('*', function (req, res, next) {
 })
 /* GET users listing. */
 router.post('/', async function (req, res, next) {
+  
   // 查询数据
-  var selectLink = 'select * from link'
+  // 返回文章信息
+  var selectLink =
+    'SELECT a.*, u.nickname, u.avatar, COUNT(z.user_id) AS like_num FROM article a LEFT JOIN user u ON a.user_id = u.id LEFT JOIN zan z ON a.id = z.article_id GROUP BY a.id;'
+
   var selectLinkData = await sqlQuery(selectLink)
   // return res.json({selectLinkData })
   if (selectLinkData.status == false) {
-    return res.json({ code: 100, msg: '系统错误', data: selectLinkData })
+    return res.json({ code: 100, msg: '系统错误', data: selectLinkData})
   }
   // return res.json(selectLinkData)
   if (selectLinkData.data.length > 0) {

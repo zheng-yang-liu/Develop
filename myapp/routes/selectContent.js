@@ -30,7 +30,7 @@ router.post('/', async function (req, res, next) {
   var selectLinkData = await sqlQuery(selectLink,[12])
   // return res.json({selectLinkData })
   if (selectLinkData.status == false) {
-    return res.json({ selectLinkData })
+    return res.json({ code: 100, msg: '系统错误', data: selectLinkData })
   }
   // return res.json(selectLinkData)
   if (selectLinkData.data.length > 0) {

@@ -64,3 +64,46 @@ password：密码
 
 ​	反之提示 账号和密码错误 请重新输入
 
+## 文章发布逻辑
+
+需要内容
+
+​	title:文章标题
+
+​	content:文章内容
+
+​	**user_id:用户ID>>不能通过参数获取**
+
+​	cate_id:文章分类ID
+
+​	**create_time:创建时间>>不能通过参数获取**
+
+​	**update_time:修改时间>>不能通过参数获取**
+
+接收参数
+
+​	title:文章标题
+
+​	content：文章内容
+
+​	cate_id:文章分类ID
+
+​	token:用户的唯一标识
+
+验证参数
+
+​	标题不为空
+
+​	内容不为空
+
+​	分类id不为空
+
+​	token值不为空，否则提醒用户登录
+
+逻辑
+
+根据用户token来获取user_id用户ID
+
+引入时间模块*const* *moment* *=* *require**(*'moment'*)*添加创建和修改时间
+
+向数据库插入数据

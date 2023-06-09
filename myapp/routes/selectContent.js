@@ -20,14 +20,14 @@ router.all('*', function (req, res, next) {
 })
 /* GET users listing. */
 router.post('/', async function (req, res, next) {
-  // 接收参数需要一个文章id
-  // id
+  // 接收参数需要一个文章contentID
+  // contentID
+  var data = req.body
   // 查询数据
   var selectLink =
     'select a.*,u.avatar,u.nickname from article a,user u where a.user_id = u.id and a.id = ?'
 
-
-  var selectLinkData = await sqlQuery(selectLink,[12])
+  var selectLinkData = await sqlQuery(selectLink, [data.contentID])
   // return res.json({selectLinkData })
   if (selectLinkData.status == false) {
     return res.json({ code: 100, msg: '系统错误', data: selectLinkData })

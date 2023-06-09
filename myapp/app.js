@@ -13,6 +13,7 @@ var selectContentList = require('./routes/selectContentList')
 var selectCategorizedList = require('./routes/selectCategorizedList')
 var selectHotReviewList = require('./routes/selectHotReviewList')
 var insertIntoRelease = require('./routes/insertIntoRelease')
+var upload = require('./routes/upload')
 
 var app = express()
 
@@ -32,5 +33,8 @@ app.use('/selectContentList', selectContentList)
 app.use('/selectCategorizedList', selectCategorizedList)
 app.use('/selectHotReviewList', selectHotReviewList)
 app.use('/insertIntoRelease', insertIntoRelease)
+app.use('/upload', upload)
+
+app.use('/public', express.static(path.join(__dirname, 'public')))
 
 module.exports = app

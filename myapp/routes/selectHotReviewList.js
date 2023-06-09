@@ -25,7 +25,7 @@ router.post('/', async function (req, res, next) {
   //!根据文章里浏览量排序列表
   // 查询数据
   var selectHotReviewList =
-    'SELECT article.id,article.title,article.see_num FROM article ORDER BY article.see_num DESC'
+    'SELECT * FROM article ORDER BY article.see_num DESC'
 
   var selectHotReviewListData = await sqlQuery(selectHotReviewList)
   // return res.json({selectHotReviewListData })

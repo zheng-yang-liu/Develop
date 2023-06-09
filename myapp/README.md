@@ -107,3 +107,24 @@ password：密码
 引入时间模块*const* *moment* *=* *require**(*'moment'*)*添加创建和修改时间
 
 向数据库插入数据
+
+## 我的喜欢文章逻辑
+
+接收参数
+
+​	token：用户的唯一标识
+
+验证参数
+
+​	token值不为空，否则提醒用户登录
+
+逻辑
+
+​	根据token来获取user表中的id
+
+​	根据id去zan表里查找对应的文章avatar_id
+
+​	根据文章avatar_id返回相应的文章信息
+
+**where** 条件
+

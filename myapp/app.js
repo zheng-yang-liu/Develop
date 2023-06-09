@@ -11,6 +11,7 @@ var selectLink = require('./routes/selectLink')
 var selectContent = require('./routes/selectContent')
 var selectContentList = require('./routes/selectContentList')
 var selectCategorizedList = require('./routes/selectCategorizedList')
+var selectHotReviewList = require('./routes/selectHotReviewList')
 
 var app = express()
 
@@ -28,5 +29,6 @@ app.use('/selectLink', selectLink)
 app.use('/selectContent', selectContent)
 app.use('/selectContentList', selectContentList)
 app.use('/selectCategorizedList', selectCategorizedList)
+app.use('/selectHotReviewList', selectHotReviewList)
 
 module.exports = app

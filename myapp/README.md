@@ -108,9 +108,11 @@ password：密码
 
 向数据库插入数据
 
-## 我的喜欢文章逻辑
+## 我的X文章请求逻辑
 
 接收参数
+
+​	name :当前网页再index.js中的路由配置的name
 
 ​	token：用户的唯一标识
 
@@ -118,13 +120,44 @@ password：密码
 
 ​	token值不为空，否则提醒用户登录
 
+​	name值不为空，否则提醒用户当前页面不存在
+
+### 我的喜欢/踩文章逻辑
+
+接收参数、验证参数**同上**
+
 逻辑
 
-​	根据token来获取user表中的id
+​	涉及到的数据表
 
-​	根据id去zan表里查找对应的文章avatar_id
+用户表user、字段：id、nickname、token
 
-​	根据文章avatar_id返回相应的文章信息
+文章表article、字段：id、title、content、user_id、cate_id、see_num、status
 
-**where** 条件
+点赞表zan、字段：id 、用户id：user_id、文章id：article_id
 
+根据参数token来获取用户id
+
+根用户id到zan表中获得文章id
+
+根据文章id获取全部的文章表信息和用户id、昵称：nickname、点赞数：like_num
+
+### 我的发布
+
+接收参数、验证参数**同上**
+
+逻辑
+
+​	涉及到的数据表
+
+​	用户表user、字段：id、nickname、token
+
+​	文章表article、字段：id、title、content、user_id、cate_id、see_num、status
+
+​	点赞表zan、字段：id 、用户id：user_id、文章id：article_id
+
+​	根据参数token来获取用户id
+
+​	根据用户id获取文章id
+
+​	根据文章id获取全部的文章表信息和用户id、昵称：nickname、点赞数：like_num

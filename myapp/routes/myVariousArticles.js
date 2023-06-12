@@ -71,6 +71,7 @@ router.post('/', async function (req, res, next) {
     // 根据点赞数量来排序
     var selectLike =
       'SELECT article.*, user.nickname, COUNT(zan.id) AS like_num FROM article INNER JOIN user ON article.user_id = user.id LEFT JOIN zan ON article.id = zan.article_id WHERE user.token = ? GROUP BY article.id, article.title, article.content, article.user_id, user.nickname'
+
     var selectLikeData = await sqlQuery(selectLike, [token])
     if (selectLikeData.status == false) {
       return res.json({ code: 100, msg: '系统错误', data: selectLikeData })
@@ -80,9 +81,9 @@ router.post('/', async function (req, res, next) {
     } else {
       return res.json({ code: 100, msg: '数据为空', data: selectLikeData.data })
     }
+  } else {
+    return res.json({ code: 100, msg: '当前页面不存在', data: null })
   }
-
-  return res.json({ code: 100, msg: '当前页面不存在', data: null })
 })
 
 module.exports = router

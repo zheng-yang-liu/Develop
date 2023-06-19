@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+}
+
+/* 块级元素 行内块元素 行内元素  */
+.block {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: auto;
+}
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.inline {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+/* 浮动 */
+.float {
+  background-color: green;
+}
+.float div:first-of-type {
+  color: red;
+  float: left;
+}
+.float div:last-of-type {
+  color: white;
+  float: right;
+  float: right;
+}
+/* 清除浮动 ，显示浮动盒子背景 */
+.clear::after {
+  content: '';
+  height: 0px;
+  width: 0px;
+  display: block;
+  /* 清除浮动 */
+  clear: both;
+  /* 隐藏伪类 */
+  visibility: hidden;
+}

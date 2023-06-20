@@ -6,8 +6,9 @@
   margin: 100px auto 0px;
   width: 1000px;
   background-color: white;
-  /* height: 220px; */
+  /* height: 520px; */
   border: 1px gray solid;
+  /* position: relative; */
 }
 .box_upperPortion {
   width: 100%;
@@ -37,19 +38,26 @@
   color: gray;
 }
 
-.box_lower_left_one_img {
+.box_lower_left_one_img_box {
   width: 100px;
   height: 100px;
+  background-color: red;
+}
+.box_lower_left_one_img {
+  width: 100%;
+  height: auto; /* 自动计算高度以保持宽高比 */
 }
 .box_lower {
   display: flex;
-  padding: 20px;
+  padding: 11px 0 14px;
   align-items: center;
+  position: relative;
 }
 .box_lower_left_one {
   display: flex;
+  /* align-items: center; */
   width: 440px;
-  border-right: 1px black solid;
+
   padding: 10px;
   box-sizing: border-box;
 }
@@ -71,8 +79,6 @@
   flex-direction: column;
   padding: 0 50px 0 50px;
   width: 120px;
-
-  border-right: 1px black solid;
 }
 .beyondHiddenDiv {
   /* 设置最大高度 */
@@ -87,8 +93,6 @@
   /* align-items: center; */
   flex-direction: column;
   padding: 0 50px 0 50px;
-
-  border-right: 1px black solid;
 }
 .box_lower_right_two {
   width: 150px;
@@ -110,4 +114,32 @@
 }
 .box_lower_right_two_button_view {
   margin-top: 10px;
+}
+
+/* 分割线 */
+.dividingLine_one {
+  position: absolute;
+
+  height: 70%;
+  border: 1px gray solid;
+  /* top: 20%; */
+  left: 40%;
+}
+/* 分割线 */
+.dividingLine_two {
+  position: absolute;
+
+  height: 70%;
+  border: 1px gray solid;
+  /* top: 20%; */
+  left: 58%;
+}
+/* 分割线 */
+.dividingLine_three {
+  position: absolute;
+
+  height: 70%;
+  border: 1px gray solid;
+  /* top: 20%; */
+  left: 82%;
 }

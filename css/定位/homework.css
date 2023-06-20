@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  margin: 100px auto 0px;
+  width: 1000px;
+  background-color: white;
+  /* height: 220px; */
+  border: 1px gray solid;
+}
+.box_upperPortion {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: rgb(193, 225, 202);
+  align-items: center;
+  color: gray;
+}
+
+.box_upperPortion_time {
+  margin-left: 40px;
+}
+.box_upperPortion_orders {
+  margin-left: 100px;
+}
+.font_red {
+  color: red;
+}
+
+.box_upperPortion_icon_delete {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 40px;
+
+  color: gray;
+}
+
+.box_lower_left_one_img {
+  width: 100px;
+  height: 100px;
+}
+.box_lower {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.box_lower_left_one {
+  display: flex;
+  width: 440px;
+  border-right: 1px black solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.box_lower_left_one_text {
+  margin-left: 20px;
+}
+.displaysTwoRows {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.box_lower_left_two {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0 50px 0 50px;
+  width: 120px;
+
+  border-right: 1px black solid;
+}
+.beyondHiddenDiv {
+  /* 设置最大高度 */
+  height: 130px;
+  /* 超出部分隐藏 */
+  overflow: hidden;
+}
+.box_lower_right_one {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0 50px 0 50px;
+
+  border-right: 1px black solid;
+}
+.box_lower_right_two {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.box_lower_right_two_button {
+  border: 2px red solid;
+  color: red;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box_lower_right_two_button_view {
+  margin-top: 10px;
+}

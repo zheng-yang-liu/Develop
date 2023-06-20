@@ -4,10 +4,10 @@
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   /* height: 300px; */
   margin: 161px auto 0px;
-  position: relative;
+  position: relative; /*相对定位*/
 }
 .item_title {
-  position: absolute;
+  position: absolute; /*绝对定位*/
   left: 420px;
   top: -89px;
   font-size: 36px;

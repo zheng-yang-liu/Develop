@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: gray;
+}
+.box {
+  margin: 100px auto 0px;
+  width: 326px;
+  border-radius: 20px;
+  /* background-color: red; */
+}
+.box_upperPortion_top {
+  width: 326px;
+  height: 183px;
+  background: linear-gradient(
+    117.9371deg,
+    #c5deff 0%,
+    #d4d1ff 56.00000000000001%,
+    #7cb4ff 100%
+  );
+  box-shadow: 0px 3px 35px 0px rgba(53, 131, 251, 0.12);
+  /* opacity: 0.6; */
+
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+.box_upperPortion_avatar_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.box_upperPortion_love_icon {
+  width: 20px;
+  height: 20px;
+}
+.box_upperPortion_left_box {
+  display: flex;
+  padding: 20px 0 0 20px;
+}
+.box_upperPortion_avatar {
+  position: relative;
+}
+.box_upperPortion_love_icon {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+}
+.box_upperPortion_right {
+  margin-left: 20px;
+}
+.box_upperPortion_right_bottom_icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.box_upperPortion_right_bottom {
+  margin-top: 20px;
+  display: flex;
+}
+.box_upperPortion_right_bottom div:first-of-type {
+  color: #3583fb;
+}
+.box_upperPortion_right_bottom div {
+  margin-right: 20px;
+}
+.box_upperPortion_left_useHer {
+  background-color: #ffba1e;
+  display: flex;
+  width: 130px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+}
+.box_upperPortion_left_useHer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* 分割线 */
+.dividingLine {
+  border-top: 1px gray solid;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+.dividingLine div:last-of-type {
+  margin-top: 10px;
+}
+/* 下部 */
+.box_lower {
+  width: 326px;
+  /* height: 200px; */
+  background-color: white;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+}
+.box_lower_display {
+  border: 2px #b4d4ff solid;
+  border-radius: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.box_lower_display img {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+.box_lower_digit {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.box_lower_digit div:first-of-type {
+  margin-right: 20px;
+}
+.box_lower_digit span {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+}

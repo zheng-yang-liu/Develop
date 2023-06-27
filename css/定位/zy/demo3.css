@@ -15,12 +15,7 @@ body {
   background-color: white;
   z-index: 999;
 }
-.topNavigation_selectTheStyle {
-  color: #3583fb;
-  /* background-color: red; */
-  padding: 5px;
-  border-bottom: 3px #3583fb solid;
-}
+
 .chubuContents::before {
   display: block;
   content: '';
@@ -29,7 +24,7 @@ body {
 .topNavigation_box {
   display: flex;
   margin-left: 10%;
-  /* height: 40px; */
+  height: 40px;
 }
 
 .topNavigation_logo {
@@ -51,10 +46,17 @@ body {
 .topNavigation_navigation div {
   margin-right: 30px;
 }
+.topNavigation_navigation div:hover {
+  color: #3583fb;
+  /* background-color: red; */
+  /* padding: 5px; */
+  border-bottom: 3px #3583fb solid;
+}
 /* 中部 */
 .chubuContents {
   width: 100%;
   margin-bottom: 150px;
+  background-color: white;
 }
 .upper {
   /* width: 100%; */
@@ -64,21 +66,11 @@ body {
   margin-right: 10%;
   padding: 20px 0px;
 }
-.upper_box_selectAstyle {
-  background-color: #7cb4ff;
-  padding: 10px;
-  border-radius: 20px;
-  color: white;
-}
 
 .upper_box {
-  /* font-size: 20px; */
   height: 50px;
-  /* margin-bottom: 20px; */
-  /* background-color: red; */
   display: flex;
   align-items: center;
-  /* padding: 10px 0px; */
   border-bottom: 1px #b3c3da solid;
 }
 .upper div:last-of-type {
@@ -86,6 +78,13 @@ body {
 }
 .upper div div {
   margin-right: 20px;
+
+  padding: 10px;
+}
+.upper div div:hover {
+  background-color: #7cb4ff;
+  border-radius: 20px;
+  color: white;
 }
 
 .lower {
@@ -95,18 +94,20 @@ body {
   padding: 20px 0px;
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 .box {
-  box-shadow: 0px 0px 10px 5px rgba(125, 168, 214, 0.2);
+  box-shadow: 0px 0px 15px 10px rgba(107, 150, 196, 0.2);
   border-radius: 20px;
-  margin-right: 5%;
-  width: 326px;
+  margin-right: 35px;
+  width: 260px;
   margin-bottom: 30px;
+  font-size: 10px;
 }
 /* 中部样式 */
 .box_upperPortion_top {
-  width: 326px;
-  height: 183px;
+  width: 260px;
+  height: 173px;
   background: linear-gradient(
     117.9371deg,
     #c5deff 0%,
@@ -161,20 +162,20 @@ body {
 .box_upperPortion_left_useHer {
   background-color: #ffba1e;
   display: flex;
-  width: 130px;
-  height: 40px;
+  width: 90px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
   color: white;
 }
 .box_upperPortion_left_useHer img {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 3%;
 }
 /* 分割线 */
 .dividingLine {
@@ -187,7 +188,7 @@ body {
 }
 /* 下部 */
 .box_lower {
-  width: 326px;
+  width: 260px;
   /* height: 200px; */
   background-color: white;
   padding: 20px 10px;

@@ -55,6 +55,7 @@ body {
 .chubuContents {
   width: 100%;
   margin-bottom: 150px;
+  background-color: white;
 }
 .upper {
   /* width: 100%; */
@@ -95,18 +96,20 @@ body {
   padding: 20px 0px;
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 .box {
-  box-shadow: 0px 0px 10px 5px rgba(125, 168, 214, 0.2);
+  box-shadow: 0px 0px 15px 10px rgba(107, 150, 196, 0.2);
   border-radius: 20px;
-  margin-right: 5%;
-  width: 326px;
+  margin-right: 35px;
+  width: 260px;
   margin-bottom: 30px;
+  font-size: 10px;
 }
 /* 中部样式 */
 .box_upperPortion_top {
-  width: 326px;
-  height: 183px;
+  width: 260px;
+  height: 173px;
   background: linear-gradient(
     117.9371deg,
     #c5deff 0%,
@@ -161,20 +164,20 @@ body {
 .box_upperPortion_left_useHer {
   background-color: #ffba1e;
   display: flex;
-  width: 130px;
-  height: 40px;
+  width: 90px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 10px;
   color: white;
 }
 .box_upperPortion_left_useHer img {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 3%;
 }
 /* 分割线 */
 .dividingLine {
@@ -187,7 +190,7 @@ body {
 }
 /* 下部 */
 .box_lower {
-  width: 326px;
+  width: 260px;
   /* height: 200px; */
   background-color: white;
   padding: 20px 10px;

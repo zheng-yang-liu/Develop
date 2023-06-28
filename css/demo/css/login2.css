@@ -1,0 +1,67 @@
+.bgimg {
+  background-image: url(../img/login-bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  overflow: hidden;
+}
+.bg_color {
+  background-color: rgba(46, 182, 170, 0.9);
+  height: 100vh;
+  height: 100%;
+  position: absolute;
+}
+.bg_font {
+  width: 23.5rem;
+  height: 15.63rem;
+}
+.logo_img {
+  /* height: 100vh; */
+  width: 2.8rem;
+  height: 2.8rem;
+  /* position: absolute; */
+  /* z-index: 999; */
+  /* top: 9.6rem; */
+  /* left: 1.75rem; */
+}
+
+.text {
+  font-size: 2.15rem;
+  /* width: 12.67rem; */
+  /* height: 7.25rem; */
+  color: white;
+  /* background-color: red; */
+  /* position: absolute; */
+  /* z-index: 999; */
+  /* top: 13.375rem; */
+  /* left: 1.75rem; */
+}
+.login_button {
+  /* margin-top: 19.9375rem; */
+  /* background-color: blue; */
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 3.4375rem;
+  /* width: 20rem; */
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+}
+.content_box {
+  position: absolute;
+  height: 100%;
+  /* background-color: red; */
+  z-index: 998;
+  padding: 8.4375rem 1.75rem 6.73rem 1.75rem;
+  box-sizing: border-box;
+}
+.content_box_content {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}

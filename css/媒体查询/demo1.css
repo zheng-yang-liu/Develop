@@ -1,23 +1,173 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: #f7f7f7;
+}
 
+.search {
+  background-color: #fff;
+  width: 100%;
+  padding: 1.22rem 1.07rem;
+  box-sizing: border-box;
+}
+.search-content {
+  width: 100%;
+  height: 2.71rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-@media (max-width: 800px) {
+.search-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.search-left img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0.71rem;
+}
+.search-left input {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 2.71rem;
+  border: 0px;
+  background: transparent;
+  width: 100%;
+}
+.search-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 6.652rem;
+}
+.search-right .hr {
+  width: 1px;
+  height: 2rem;
+  background: #d8d8d8;
+}
+.search-right img {
+  width: 1.14rem;
+  height: 1.14rem;
+  margin: 0px 0.642rem 0px 1rem;
+}
+.search-right .text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  margin-right: 1.57rem;
+}
+.lowerList {
+  width: 100%;
+  /* height: 100px; */
+  /* background-color: blue; */
+  padding: 0.71rem 0.71rem 0px 0.71rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.lowerList_box {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 7px;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.lowerList_left_title {
+  font-size: 1.2rem;
+  margin: 1.21rem 0px 0.85rem 0.71rem;
+  font-weight: bold;
+}
+.lowerList_introduce {
+  display: flex;
+  align-items: center;
+  margin-left: 0.71rem;
+  margin-top: 0.85rem;
+
+  padding-bottom: 0.85rem;
+}
+.lowerList_introduce2 {
+  display: flex;
+  align-items: center;
+  margin-left: 0.71rem;
+
+  padding-bottom: 0.85rem;
+}
+.lowerList_introduce img {
+  margin-right: 0.64rem;
+}
+.lowerList_introduce2 img {
+  margin-right: 0.64rem;
+}
+.lowerList_introduce div {
+  font-size: 0.9rem;
+}
+.lowerList_right div {
+  color: #30adf3;
+  font-size: 1rem;
+  /* padding-top: 1.35rem ; */
+  /* background-color: red; */
+  padding: 1.35rem 0.71rem 0px 0px;
+}
+.lowerList_icon {
+  width: 11px;
+  height: 11px;
+}
+.lowerList_right_icon {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  /* background-color: blue; */
+  position: absolute;
+  /* right: 4rem; */
+  left: 10rem;
+  bottom: 0px;
+  padding-bottom: 0.85rem;
+}
+.lowerList_right_seeNum {
+  color: #30adf3;
+  /* margin: 1.35rem 0.71rem 0px 0px; */
+}
+
+/* 隐藏所有滚动条 */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* 在某些浏览器中需要额外的样式 */
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* 小于等于 */
+@media (max-width: 900px) {
   html {
-    font-size: 42px;
+    font-size: 20px;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   html {
-    font-size: 28px;
+    font-size: 18px;
   }
 }
-
-
 @media (max-width: 400px) {
   html {
     font-size: 14px;
   }
 }
-.font_size {
-  font-size: 1rem;
-}
+
+/* 
+@media (max-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+} */

@@ -1,0 +1,17 @@
+.index_ask_recording_outerBox {
+  padding: 1.6rem;
+  font-size: 0.625rem;
+  display: flex;
+  line-height: 1.25rem;
+  /* 14.3125 */
+}
+.recording_right {
+  margin-left: 2.8125rem;
+}
+
+.lineBreak {
+  word-wrap: break-word;
+
+  word-wrap: break-word;
+  max-width: 14.3125rem;
+}

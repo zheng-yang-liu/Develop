@@ -1,0 +1,70 @@
+/*
+ * @Author: thexu thexuyan@outlook.com
+ * @Date: 2023-06-28 11:40:50
+ * @LastEditors: thexu thexuyan@outlook.com
+ * @LastEditTime: 2023-06-28 14:57:38
+ * @FilePath: \Develop\css\demo\css\index_ask_mail.css
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+ */
+.index_input_ordinary {
+  box-sizing: border-box;
+
+  /* background-color: red; */
+  padding: 0px 0.9375rem;
+}
+.enterTheContent {
+  padding-top: 1.25rem;
+  font-size: 0.75rem;
+}
+.index_input_ordinary input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
+  background: rgba(63, 181, 169, 0);
+  border: 1px solid #999999;
+  border-radius: 3px;
+  padding: 0.9375rem 0.63rem 0.9375rem 0.63rem;
+}
+
+.index_input_choose {
+  box-sizing: border-box;
+
+  /* background-color: red; */
+  padding: 0px 0.9375rem;
+}
+.index_input_choose input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
+  background: rgba(63, 181, 169, 0);
+  border: 1px solid #999999;
+  border-radius: 3px;
+  padding: 0.9375rem 0.63rem 0.9375rem 0.63rem;
+}
+.index_input_choose_box {
+  position: relative;
+  /* background-color: red; */
+}
+.iconimg {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  position: absolute;
+  /* z-index: 999; */
+  right: 2rem;
+  top: 4rem;
+}
+.index_button {
+  height: 3.45rem;
+  background-color: #2eb6aa;
+  margin-top: 1.25rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+/* recording */

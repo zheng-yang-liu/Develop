@@ -1,0 +1,29 @@
+.outerBox {
+  /* background-color: red; */
+  padding: 2.8rem 1.75rem 0px 1.75rem;
+}
+
+.input {
+  padding: 1rem 0rem;
+  border: none; /* 移除默认边框样式 */
+  border-bottom: 1px solid gray; /* 添加底部边框 */
+  outline: none; /* 移除聚焦时的外边框 */
+}
+.login {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #2d2e32;
+}
+.input_admin input {
+  margin-top: 2.07rem;
+}
+.input_password input {
+  margin-top: 1.25rem;
+}
+.loginbutton button {
+  margin-top: 1.9rem;
+  height: 3.45rem;
+  color: white;
+  background-color: #2eb6aa;
+  border: none;
+}

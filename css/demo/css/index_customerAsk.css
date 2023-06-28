@@ -1,0 +1,31 @@
+.index_ask_outerBox {
+  padding: 1.8rem;
+  line-height: 1.25rem;
+  /* box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); */
+  margin-top: 2px;
+}
+.index_ask_outerBox_above {
+  font-size: 0.629rem;
+  display: flex;
+}
+.above_right {
+  margin-left: 2.8125rem;
+}
+.under_img {
+  height: 6.375rem;
+  width: 6.275rem;
+}
+.index_ask_outerBox_under {
+  padding-top: 0.94rem;
+  font-size: 0.629rem;
+}
+.under_middle {
+  display: flex;
+  padding: 1.4285rem 0px;
+}
+.under_middle_right {
+  margin-left: 1.35rem;
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+

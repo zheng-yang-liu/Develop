@@ -1,0 +1,69 @@
+.malis_outerBox {
+  padding: 1.25rem 0.9375rem;
+}
+
+.index_input_ordinary {
+  box-sizing: border-box;
+}
+.enterTheContent {
+  padding-top: 1.25rem;
+  font-size: 0.75rem;
+}
+.index_input_ordinary textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 12.875rem;
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
+  background: rgba(63, 181, 169, 0);
+  border: 1px solid #999999;
+  border-radius: 3px;
+  text-align: left;
+  vertical-align: top;
+  padding: 0.9375rem;
+  resize: none; /* 禁止文本框调整大小 */
+}
+.index_input_ordinary input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.9375rem;
+  font-size: 0.75rem;
+  border: 1px solid #999999;
+  padding: 0.9375rem;
+}
+/* 隐藏滚顶条 */
+.index_input_ordinary textarea::-webkit-scrollbar {
+  display: none;
+}
+.AddImg img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.AddImg {
+  width: 6.875rem;
+  height: 6.25rem;
+  background: rgba(153, 153, 153, 0.2);
+  /* background-color: #999999 ; */
+}
+
+.index_button {
+  height: 3.45rem;
+  background-color: #2eb6aa;
+  margin-top: 1.25rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.malis_publishAnImage {
+  width: 100%;
+  /* height: 0.625rem; */
+  /* background-color: red; */
+  box-sizing: border-box;
+  margin-top: 1.25rem;
+}
+.malis_img {
+  width: 6.875rem;
+  height: 6.25rem;
+}

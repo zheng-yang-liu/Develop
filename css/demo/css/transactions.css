@@ -1,8 +1,12 @@
+.index_transactions_outerBox {
+  padding: 0px 0.9375rem;
+}
+
 .index_input_ordinary {
   box-sizing: border-box;
 
   /* background-color: red; */
-  padding: 0px 0.9375rem;
+  /* padding: 0px 0.9375rem; */
 }
 .enterTheContent {
   padding-top: 1.25rem;
@@ -23,7 +27,7 @@
   box-sizing: border-box;
 
   /* background-color: red; */
-  padding: 0px 0.9375rem;
+  /* padding: 0px 0.9375rem; */
 }
 .index_input_choose input {
   box-sizing: border-box;

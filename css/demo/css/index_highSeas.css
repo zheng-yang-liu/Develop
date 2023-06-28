@@ -1,0 +1,127 @@
+.under_index_highSeas {
+  padding: 1.3125rem 0.9375rem;
+  box-sizing: border-box;
+}
+
+.above {
+  padding: 0.5625rem 0.9375rem 1rem 0.9375rem;
+  box-sizing: border-box;
+}
+.above_above {
+  position: relative;
+  font-size: 0.75rem;
+  color: white;
+}
+.above_above img {
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 0.6875rem;
+  left: 0.9375rem;
+}
+.above_above input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6875rem 0rem 0.6875rem 2.1875rem;
+  background-color: rgba(255, 255, 255, 0.23);
+  border: none;
+  border-radius: 0.9375rem;
+  font-size: 12px;
+  font-weight: 400;
+  /* color: white !important; */
+}
+/* 设置输入框字体的颜色 */
+.inputwhite:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #fff;
+}
+.inputwhite:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fff;
+}
+.inputwhite::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.above_under {
+  margin-top: 0.9375rem;
+}
+.above_under img {
+  width: 0.5625rem;
+  height: 0.8125rem;
+}
+.above_under span {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #faf8f8;
+}
+/* 卡片列表 */
+.firmcontentList {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1),
+    0 0 6px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+  padding: 1.3125rem 0.9375rem;
+  margin-top: 0.625rem;
+
+  border-radius: 10px;
+}
+.left_title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.left_content {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.9375rem;
+  margin: 0.9375rem 0rem;
+}
+
+.right_name {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+}
+
+.left_button {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+.left_button div {
+  width: 62px;
+  height: 19px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #999999;
+  border-radius: 10px;
+
+  font-size: 0.625rem;
+  width: 3.875rem;
+  height: 1.1875rem;
+
+  /* padding: 0.3125rem 1.0625rem; */
+}
+.left_button_right {
+  margin-left: 0.3125rem;
+}
+
+.firmcontentList_under {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.firmcontentList_under {
+  color: white;
+  font-size: 0.75rem;
+}
+.firmcontentList_under .under_button {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 10px;
+  width: 6.3125rem;
+  height: 1.5rem;
+  background: #3fb5a9;
+  border-radius: 3px;
+
+  /* padding: 0.375rem 1.6875rem; */
+}

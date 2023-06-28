@@ -9,7 +9,11 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  /* background-color: #fff; */
+  background-color: #fff;
+  /* background-color: #2eb6aa; */
+}
+/* 背景颜色 */
+.backColorGreen {
   background-color: #2eb6aa;
 }
 

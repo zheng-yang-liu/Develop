@@ -1,0 +1,47 @@
+.askcontent_outerBox {
+  padding: 1.25rem 1.875rem;
+}
+.herder .project {
+  margin-right: 2.125rem;
+}
+.inforContent_box {
+  margin-top: 1.75rem;
+}
+
+.inforContent_left {
+  width: 4.6875rem;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 1.25rem;
+}
+
+.inforContent_right {
+  font-size: 0.625rem;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 1.25rem;
+  margin-left: 1.625rem;
+}
+.dividingLine {
+  width: 21.5625rem;
+  height: 0.0625rem;
+  background-color: black;
+  opacity: 0.1;
+  margin: 10px 0px;
+}
+.askcontent_state {
+  margin-top: 1.25rem;
+  width: 105px;
+  height: 24px;
+  background: #3fb5a9;
+  border-radius: 3px;
+}
+
+.askcontent_state div:first-of-type {
+  font-size: 0.75rem;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #ffffff;
+}

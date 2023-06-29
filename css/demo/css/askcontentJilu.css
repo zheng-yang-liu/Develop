@@ -1,0 +1,81 @@
+.askcontentJilu_outerBox {
+  padding: 1.25rem 0.9375rem;
+}
+.search_left img {
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  left: 0.9375rem;
+  top: 0.625rem;
+}
+.search_box {
+  /* background-color: red; */
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+}
+.search_left {
+  /* background-color: blue; */
+  width: 100%;
+}
+.search_left input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.125rem;
+  background: rgba(255, 255, 255, 0);
+  border: 0.0625rem solid #000000;
+  opacity: 0.23;
+  border-radius: 0.9375rem;
+  padding-left: 1.875rem;
+}
+.search_right {
+  padding-left: 0.3125rem;
+  height: 100%;
+  flex: 0 0 2.3125rem;
+  /* width: 23px; */
+  /* height: 12px; */
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+  margin-left: auto;
+  /* background-color: green; */
+}
+.search_right div {
+  margin-left: 0.25rem;
+  margin-left: auto;
+}
+.search_right img {
+  width: 0.5625rem;
+  height: 0.8125rem;
+}
+.clientList {
+  padding: 1.25rem 0.625rem;
+}
+.nameWidth {
+  width: 3.125rem;
+}
+.alient_above {
+  font-size: 0.625rem;
+}
+.left_text {
+  color: #999;
+}
+.right_text {
+  color: #4d4d4d;
+}
+.above_text {
+  margin-right: 1rem;
+}
+.alient_middle {
+  padding: 0.875rem 0rem 1.3125rem 0rem;
+}
+.alient_under button {
+  width: 4.25rem;
+  height: 1.5rem;
+  background: rgba(63, 181, 169, 0);
+  border: 0.0625rem solid #3fb5a9;
+  border-radius: 0.1875rem;
+  margin-left: 0.3125rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #3fb5a9;
+}

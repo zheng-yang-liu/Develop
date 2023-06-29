@@ -1,0 +1,157 @@
+.cilentContent_outerBox {
+  padding: 1.3125rem 0.9375rem;
+}
+.middle {
+  padding: 1.3125rem 0.9375rem 1.0625rem 0.9375rem;
+}
+.project {
+  margin-right: 2.1875rem;
+}
+.project img {
+  width: 1rem;
+  height: 0.875rem;
+}
+
+.clientList {
+  padding: 1.25rem 0.6465rem;
+  /* position: relative; */
+}
+
+/* 未选中 */
+.changeProject {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.changeProject .greenline {
+  height: 0.1875rem;
+  background: green;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -0.1875rem;
+}
+.uncheckedProject {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #999999;
+}
+
+.aboce_left_clearLogo_img img {
+  width: 2.375rem;
+  height: 1.75rem;
+}
+
+.aboce_right_clearContent_text {
+  margin-left: 0.6875rem;
+}
+
+.clientName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.clientaddress {
+  margin-top: 0.9375rem;
+  margin-bottom: 0.5625rem;
+  background: #ffffff;
+  border-radius: 0.625rem;
+}
+.clientTime {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+}
+
+.List_above_middle {
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #000;
+  opacity: 0.1;
+  margin: 1.3125rem 0rem;
+}
+.List_above_under {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 1.25rem;
+}
+
+.above_under_button_left {
+  width: 6.5625rem;
+  height: 1.5rem;
+  background: #3fb5a9;
+  border-radius: 0.1875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.List_above_under_button {
+  padding: 1.25rem 0rem 0rem 0rem;
+}
+.above_under_button_right {
+  width: 1.6875rem;
+
+  height: 1.5rem;
+  margin-left: 0.3125rem;
+  border: 1px #3fb5a9 solid;
+  border-radius: 5px;
+}
+.above_under_button_right img {
+  width: 0.6875rem;
+  height: 0.6875rem;
+}
+
+/* 普通 */
+.leftabove_contentTitle {
+  align-items: end;
+}
+.contentTitle_text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+.flex_classify {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.9375rem;
+  margin-left: 0.875rem;
+}
+.leftabove_contentText {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.9375rem;
+  margin: 0.9375rem 0rem 1.5rem 0rem;
+}
+
+.left_file_icon img {
+  width: 0.875rem;
+  height: 1.0625rem;
+}
+
+.right_money {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 0.625rem;
+}
+
+.clientName_ordinary {
+  margin: 2.6875rem 0rem 1.25rem 0rem;
+}
+
+.ordinary_updateAndDelete button {
+  width: 4.25rem;
+
+  height: 1.5rem;
+  border: 1px #3fb5a9 solid;
+  color: #3fb5a9;
+  background-color: transparent;
+}
+.ordinary_right {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}

@@ -58,8 +58,6 @@ a {
   }
 }
 
-
-
 @media (max-height: 800px) {
   html {
     font-size: 16px;
@@ -205,4 +203,38 @@ a {
   line-height: 0.5625rem;
   margin-top: 0.5rem;
   text-align: center;
+}
+
+/* 切换项目的样式 */
+.herder {
+  padding: 0rem 0.9375rem 1.3125rem 0.9375rem;
+}
+.project img {
+  width: 1rem;
+  height: 0.875rem;
+}
+.clientList {
+  padding: 1.25rem 0.9375rem 1.25rem 0.9375rem;
+  /* position: relative; */
+}
+
+/* 选中 */
+.changeProject {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.changeProject .greenline {
+  height: 0.1875rem;
+  background: green;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -0.1875rem;
+}
+
+/* 未选中选中 */
+.uncheckedProject {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #999999;
 }

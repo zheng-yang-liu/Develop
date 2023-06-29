@@ -1,0 +1,34 @@
+.messageText_outerBox {
+  padding: 1.4375rem 0.9375rem;
+}
+.clientList {
+  padding: 1.25rem 1.625rem 2.25rem 0.9375rem;
+}
+
+.clientList_left {
+  position: relative;
+}
+.ailentText::after {
+  content: "";
+  width: 15.75rem;
+  height: 1.5625rem;
+}
+
+.ailentContent {
+  /* background-color: red; */
+  width: 15.75rem;
+  height: 1.5625rem;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  /* line-height: 0.9375rem; */
+  position: absolute;
+  /* 超出隐藏 */
+  overflow: hidden;
+   /* 只有在超出部分的时候才显示 */
+   display: -webkit-box; /* safari */
+   -webkit-box-orient: vertical; /* safari */
+   -webkit-line-clamp: 2; /* safari */
+   /* box-sizing: border-box; */ /* ie9+,ff */
+
+}

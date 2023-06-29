@@ -10,6 +10,15 @@
 }
 .above_right {
   margin-left: 2.8125rem;
+
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+.above_left {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
 }
 .under_img {
   height: 6.375rem;
@@ -24,8 +33,19 @@
   padding: 1.4285rem 0px;
 }
 .under_middle_right {
-  margin-left: 1.35rem;
-  /* background-color: red; */
+  margin-left: 21.6px;
   box-sizing: border-box;
+
+  width: 225px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #4d4d4d;
+  overflow: hidden;
+
 }
 
+.under_middle_left {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+}

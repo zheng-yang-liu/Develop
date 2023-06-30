@@ -1,0 +1,136 @@
+.userContent {
+  padding: 0.625rem 0.9375rem 1.875rem 1.5625rem;
+}
+
+.user_left_left img {
+  width: 3.375rem;
+  height: 3.375rem;
+  margin-right: 0.6875rem;
+  border-radius: 50%;
+}
+.user_name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.user_Id {
+  font-size: 0.5625rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 0.625rem;
+}
+.user_right button {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #ffffff;
+
+  width: 4.625rem;
+  height: 1.3125rem;
+  background: rgba(0, 0, 0, 0);
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.625rem;
+}
+
+.index_outerBox {
+  padding: 1.25rem 0.9375rem;
+}
+.project_img {
+  padding: 0rem calc(1.9375rem - 0.9375rem);
+}
+.project_img img {
+  width: 4.3125rem;
+  height: 5.5625rem;
+}
+.datanum {
+  padding: 1.25rem 3.75rem;
+  margin-top: 1.25rem;
+}
+.datanum img:first-of-type {
+  width: 6.25rem;
+  height: 5.5rem;
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  right: 50px;
+}
+.datanum img:last-of-type {
+  width: 5.1875rem;
+  height: 5.5rem;
+
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  right: 50px;
+}
+
+.digit {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+.numText {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+}
+
+.datanum_left {
+  flex-direction: column;
+  /* background-color: red; */
+
+  z-index: 999;
+}
+
+.datanum_right {
+  flex-direction: column;
+  /* background-color: red; */
+  z-index: 999;
+}
+
+.userList_left img {
+  width: 2.375rem;
+  height: 2.3125rem;
+}
+.userList_left {
+  margin-right: 0.75rem;
+}
+.right_above_name {
+  font-size: 1rem;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #4d4d4d;
+  line-height: 1.25rem;
+}
+.right_above_time {
+  font-size: 0.625rem;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.5625rem;
+}
+.user_right_under {
+  width: 15.75rem;
+  margin-top: 0.9375rem;
+  font-size: 0.625rem;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.9375rem;
+}
+
+.messageNotifications {
+  font-size: 1.3125rem;
+  font-weight: 500;
+  color: #2d2e32;
+  margin: 0.9375rem 0rem 1rem 0rem;
+}
+
+.dividingLine {
+  margin: 1.1875rem 0rem 1.3125rem 0rem;
+  width: 100%;
+  height: 0.0625rem;
+  opacity: 0.1;
+  background-color: black;
+}

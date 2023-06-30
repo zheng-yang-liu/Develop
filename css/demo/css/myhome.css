@@ -1,0 +1,49 @@
+.userContent {
+  padding: 0.625rem 0.9375rem 1.875rem 1.5625rem;
+}
+
+.user_left_left img {
+  width: 3.375rem;
+  height: 3.375rem;
+  margin-right: 0.6875rem;
+  border-radius: 50%;
+}
+.user_name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.user_Id {
+  font-size: 0.5625rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 0.625rem;
+}
+
+.myhome_outerBox {
+  padding: 1.8125rem 0.9375rem;
+  height: 100Vh;
+}
+
+.project_Left img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.project_Left div {
+  margin-left: 1.125rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.project_Right img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+/* 分割线 */
+.dividingLine {
+  background-color: black;
+  width: 100%;
+  height: 0.0625rem;
+  opacity: 0.1;
+  margin: 1.125rem 0rem;
+}

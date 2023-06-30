@@ -1,0 +1,75 @@
+.toContentouterBox {
+  padding: 1.25rem 0.9375rem;
+}
+.clientList {
+  width: 100%;
+  /* background-color: green; */
+}
+.list_above {
+  width: 100%;
+  /* background-color: red; */
+}
+.list_above_left img {
+  width: 2.3125rem;
+  height: 2.375rem;
+}
+.list_above_right {
+  padding-left: 0.75rem;
+  width: 100%;
+  /* background-color: black; */
+}
+.clientname {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4d4d4d;
+  margin-bottom: 0.5625rem;
+}
+.clientContent {
+  width: 100%;
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  /* background-color: blue; */
+  box-sizing: border-box;
+}
+.list_middle {
+  margin-top: 1.25rem;
+}
+.list_middle_left_time {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: #999999;
+  margin-left: 0.3125rem;
+  /* margin-top: 1.75rem; */
+}
+.list_middle_left_button button:first-of-type {
+  width: 4.25rem;
+  height: 1.5rem;
+  background: #3fb5a9;
+  border-radius: 0.1875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+}
+.list_middle_left_button button:last-of-type {
+  width: 4.25rem;
+  height: 1.5rem;
+  background: rgba(63, 181, 169, 0);
+  border: 0.0625rem solid #3fb5a9;
+  border-radius: 0.1875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #3fb5a9;
+  margin-left: 0.3125rem;
+}
+.list_under {
+  margin-top: 1.25rem;
+}
+.list_under img {
+  width: 0.8125rem;
+  height: 0.5rem;
+}
+
+
+

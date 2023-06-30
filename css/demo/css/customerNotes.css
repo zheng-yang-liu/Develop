@@ -3,9 +3,6 @@
 }
 .index_input_ordinary {
   box-sizing: border-box;
-
-  /* background-color: red; */
-  /* padding: 0px 0.9375rem; */
 }
 .enterTheContent {
   padding-top: 1.25rem;
@@ -19,21 +16,6 @@
   color: white;
   border: none;
   border-radius: 2px;
-}
-.above_text {
-  display: flex;
-  line-height: 1.25rem;
-}
-.text_lisy_left {
-  font-size: 0.625rem;
-  font-weight: 400;
-  color: #999999;
-}
-.text_lisy_right {
-  font-size: 0.625rem;
-  font-weight: 400;
-  color: #4d4d4d;
-  margin-left: 1.625rem;
 }
 .index_input_ordinary textarea {
   box-sizing: border-box;

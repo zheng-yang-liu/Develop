@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>测试弹窗</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <style>
+      dialog#dog {
+        border: none;
+        /* left: 50%; */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="dog.showModal()">弹窗</button>
+    <dialog id="dog">
+      <div class="win">
+        <p>这是弹窗</p>
+        <button onclick="dog.close()">关闭</button>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -116,6 +116,17 @@ a {
   text-overflow: ellipsis; /* 使用省略号表示被隐藏的内容 */
 }
 
+/* 只显示两行文本 */
+.onlytwoText {
+  /* 超出隐藏 */
+  overflow: hidden;
+  /* 只有在超出部分的时候才显示 */
+  display: -webkit-box; /* safari */
+  -webkit-box-orient: vertical; /* safari */
+  -webkit-line-clamp: 2; /* safari */
+  /* box-sizing: border-box; */ /* ie9+,ff */
+}
+
 .whiteBackground {
   /* height: 100vh; */
   background: #ffffff;
@@ -256,20 +267,14 @@ a {
   margin: 1.25rem 0rem;
 }
 
-
-
-
-
-
-
 /* 左右结构发文字排布 */
 
-.leftAndRight_text{
+.leftAndRight_text {
   line-height: 1.25rem;
 }
 .informationList_left {
   width: 5rem;
-  flex:0 0 5rem;
+  flex: 0 0 5rem;
   /* padding-right: 1.625rem; */
 
   /* line-height: 1.25rem; */

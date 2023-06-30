@@ -5,13 +5,11 @@
   line-height: 1.25rem;
   /* 14.3125 */
 }
-.recording_right {
-  margin-left: 2.8125rem;
-}
-
-.lineBreak {
-  word-wrap: break-word;
-
-  word-wrap: break-word;
-  max-width: 14.3125rem;
+.askContent{
+  /* background-color: red; */
+  width: 100%;
+  /* height: 200px; */
+  box-sizing: border-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 3; 
 }

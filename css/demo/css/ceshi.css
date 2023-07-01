@@ -1,0 +1,183 @@
+#dog {
+  left: 50%;
+  transform: translateX(-50%);
+  /* box-sizing: border-box; */
+  background-color: #fff;
+  padding: 1.25rem 0.9375rem;
+  border: none;
+
+  /* width: 23.4375rem; */
+}
+/* 标签 */
+.label {
+  width: 23.4375rem;
+  top: 11.3125rem;
+  border-radius: 0.625rem;
+}
+/* 选择 */
+.choose {
+  width: 16.25rem;
+  top: 11.3125rem;
+  border-radius: 0.625rem;
+}
+#dog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.dialog_title {
+  /* width: 4.0625rem; */
+  /* height: 1rem; */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4d4d4d;
+  line-height: 1.25rem;
+}
+
+.dialog_close_icon {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+.submit {
+  width: 100%;
+  height: 2.625rem;
+  background: #3fb5a9;
+  border-radius: 0.1875rem;
+  margin-top: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+}
+
+/* 客户详情弹窗分开样式 */
+
+.add_icon {
+  width: 0.6875rem;
+  height: 0.6875rem;
+}
+.dialog_middle_content button {
+  width: 4.375rem;
+  height: 1.1875rem;
+  background: rgba(0, 0, 0, 0);
+  border: 0.0625rem solid #999999;
+  border-radius: 0.625rem;
+
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #4d4d4d;
+  margin-bottom: 0.625rem;
+}
+.dialog_middle_content {
+  box-sizing: border-box;
+  /* background-color: red; */
+  margin-top: 0.9375rem;
+}
+.win {
+  /* background-color: blue; */
+
+  width: 100%;
+}
+
+/* 发送通知/发送需求分开样式 */
+/* 自定义方形选项框样式 */
+input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+input[type='radio']:checked {
+  background-color: #266bda;
+}
+
+/* 添加自定义样式后的文本标签 */
+label {
+  display: inline-block;
+  margin-right: 0.625rem;
+  text-align: center;
+}
+.sanjiao {
+  width: 0.5625rem;
+  height: 0.5625rem;
+}
+.choose_box {
+  padding-left: 0.875rem;
+}
+.choose_box div {
+  margin-bottom: 0.8125rem;
+}
+
+/* 英雄榜分开样式 */
+.rules {
+  width: 312px;
+  height: 115px;
+  font-size: 10px;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #999999;
+  line-height: 15px;
+}
+
+/* 顶部弹窗 */
+
+.list_choose_title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #4d4d4d;
+  margin-bottom: 0.9375rem;
+}
+.choose_list_input input {
+    width: 100%;
+    height: 2.625rem;
+    background: rgba(63, 181, 169, 0);
+    border: 0.0625rem solid #999999;
+    border-radius: 0.1875rem;
+    padding-left: 2px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #b6b6b6;
+}
+.choose_List {
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+.choose_List_choose {
+  margin-bottom: 1.25rem;
+  width: 49%;
+    /* width: 21%; */
+  /* height: 2.625rem; */
+  /* background-color: blue; */
+}
+.pullDownIcon {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 1%;
+}
+.siftAndclose button {
+  width: 49.5%;
+  height: 2.625rem;
+  background: #3fb5a9;
+  border-radius: 0.1875rem;
+  border: none;
+}
+
+
+.siftAndclose button:first-of-type {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.siftAndclose button:last-of-type {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}

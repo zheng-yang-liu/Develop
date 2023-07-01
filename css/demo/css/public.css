@@ -40,10 +40,16 @@ a {
   html {
     font-size: 26px;
   }
+  body {
+    padding: 0px 11%;
+  }
 }
 @media (max-width: 800px) {
   html {
     font-size: 25px;
+  }
+  body {
+    padding: 0px 0px;
   }
 }
 
@@ -51,10 +57,29 @@ a {
   html {
     font-size: 18px;
   }
+  body {
+    padding: 0px 0px;
+  }
 }
 @media (max-width: 400px) {
   html {
     font-size: 16px;
+  }
+  body {
+    padding: 0px 0px;
+  }
+}
+@media (max-width: 370px) {
+  /* 小于目标储存时改为上下结构 */
+  .flexUpAndDown {
+    display: flex;
+    flex-direction: column;
+  }
+  .siftAndclose button {
+    width: 100% !important;
+  }
+  .choose_List_choose {
+    width: 100% !important;
   }
 }
 

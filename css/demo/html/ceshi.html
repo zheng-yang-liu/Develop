@@ -3,23 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>测试弹窗</title>
+    <title>客户详情</title>
     <link rel="stylesheet" href="../css/public.css" />
-    <style>
-      dialog#dog {
-        border: none;
-        /* left: 50%; */
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    </style>
+    <link rel="stylesheet" href="../css/clientContent.css" />
+    <link rel="stylesheet" href="../css/ceshi.css" />
+    <script src="../js/OpenAndCloseDialog.js"></script>
   </head>
   <body>
-    <button onclick="dog.showModal()">弹窗</button>
-    <dialog id="dog">
-      <div class="win">
-        <p>这是弹窗</p>
-        <button onclick="dog.close()">关闭</button>
+    <div
+      class="above_under_button_right flex_center flex_midden"
+      onclick="openDialog()"
+    >
+      <img src="../img/addgreen.png" />
+    </div>
+
+    <!-- 客户详情弹窗 -->
+    <!-- <dialog id="dog" class="position_R label">
+      <div class="win wp">
+        <div class="dialog_title">选择标签</div>
+        <div class="dialog_middle_content wp flex_wrap flex_between">
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button><img src="../img/addimg.png" class="add_icon" /></button>
+        </div>
+        <button onclick="closeDialog()" class="submit">提交</button>
+      </div>
+      <img src="../img/close.png" class="dialog_close_icon" onclick="closeDialog()"/>
+    </dialog> -->
+
+    <!-- 发送通知/发送需求 弹窗 -->
+    <!-- <dialog id="dog" class="position_R choose">
+      <div class="win wp">
+        <div class="dialog_title">选择发送人群</div>
+        <div class="dialog_middle_content wp">
+          <div class="choose_box">
+            <div class="choose_above">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> A院 </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 欧亚学院</label>
+              </div>
+            </div>
+            <div class="choose_middle">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> B院 </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 校领导</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 董事会</label>
+              </div>
+            </div>
+            <div class="choose_under">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> C院 </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 招生办</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 财务处</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="closeDialog()" class="submit">提交</button>
+      </div>
+      <img
+        src="../img/close.png"
+        class="dialog_close_icon"
+        onclick="closeDialog()"
+      />
+    </dialog> -->
+
+    <!-- 英雄榜 弹窗 -->
+    <!-- <dialog id="dog" class="position_R label">
+      <div class="win wp">
+        <div class="dialog_title">规则</div>
+        <div class="dialog_middle_content wp flex_wrap flex_between">
+          <div class="rules">
+            合同号:2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同号:2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同合同2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同号英雄2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同号是英雄2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同号号码2311231223131签约时间: 2023-10-1到期时间:
+            2023-10-10合同签约时间: 2023-10-1到期时间: 2023-10-10时间:
+            2023-10-1到期时间时间时间问题
+          </div>
+        </div>
+      </div>
+      <img
+        src="../img/close.png"
+        class="dialog_close_icon"
+        onclick="closeDialog()"
+      />
+    </dialog> -->
+
+    <!-- 顶部 弹窗 -->
+    <dialog id="dog" class="position_R wp">
+      <div class="win wp">
+        <div class="dialog_middle_content wp flex_wrap flex_between flex_wrap">
+          <div class="choose_List flex_wrap flex_between wp flexUpAndDown">
+            <div class="choose_List_choose">
+              <div class="list_choose_title">交易分类</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">签约时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">到期时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">文件上传时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+          </div>
+          <div class="siftAndclose wp flex_between flexUpAndDown">
+            <button>筛选</button>
+            <button onclick="closeDialog()">取消</button>
+          </div>
+        </div>
       </div>
     </dialog>
   </body>

@@ -26,9 +26,8 @@
   background-color: rgba(255, 255, 255, 0.23);
   border: none;
   border-radius: 0.9375rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  /* color: white !important; */
 }
 
 /* 设置输入框字体的颜色 */
@@ -65,7 +64,7 @@ textarea::-webkit-input-placeholder {
   padding: 1.3125rem 0.9375rem;
   margin-top: 0.625rem;
 
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .left_title {
   font-size: 1rem;
@@ -93,15 +92,12 @@ textarea::-webkit-input-placeholder {
 .left_button div {
   width: 3.875rem;
   height: 1.1875rem;
-  /* background: rgba(0, 0, 0, 0); */
   border: 0.0625rem solid #999999;
   border-radius: 0.625rem;
 
   font-size: 0.625rem;
   width: 3.875rem;
   height: 1.1875rem;
-
-  /* padding: 0.3125rem 1.0625rem; */
 }
 /* 未分配 */
 .unassigned {
@@ -124,12 +120,10 @@ textarea::-webkit-input-placeholder {
   font-size: 0.75rem;
 }
 .firmcontentList_under .under_button {
-  flex-basis: calc(33.33% - 10px);
-  margin-bottom: 10px;
+  flex-basis: calc(33.33% - 0.625rem);
+  margin-bottom: 0.625rem;
   width: 6.3125rem;
   height: 1.5rem;
   background: #3fb5a9;
-  border-radius: 3px;
-
-  /* padding: 0.375rem 1.6875rem; */
+  border-radius: 0.1875rem;
 }

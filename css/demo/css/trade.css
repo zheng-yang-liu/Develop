@@ -44,3 +44,6 @@
   font-weight: 500;
   color: #3fb5a9;
 }
+.leftAndright_tetx {
+  flex-wrap: wrap;
+}

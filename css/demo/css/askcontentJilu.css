@@ -38,13 +38,10 @@
   padding-left: 0.3125rem;
   height: 100%;
   flex: 0 0 2.3125rem;
-  /* width: 23px; */
-  /* height: 12px; */
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   color: #4d4d4d;
   margin-left: auto;
-  /* background-color: green; */
 }
 .search_right div {
   margin-left: 0.25rem;
@@ -62,6 +59,7 @@
 }
 .alient_above {
   font-size: 0.625rem;
+  flex-wrap: wrap;
 }
 .left_text {
   color: #999;

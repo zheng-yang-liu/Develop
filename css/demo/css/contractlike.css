@@ -41,10 +41,9 @@
   /* 超出隐藏 */
   overflow: hidden;
   /* 只有在超出部分的时候才显示 */
-  display: -webkit-box; /* safari */
-  -webkit-box-orient: vertical; /* safari */
-  -webkit-line-clamp: 2; /* safari */
-  /* box-sizing: border-box; */ /* ie9+,ff */
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;
 }
 
 .ailentTime {
@@ -55,12 +54,9 @@
 }
 
 .clientList_img {
-  /* background-color: red; */
-  /* height: 12px; */
   margin-top: 1.25rem;
   padding-left: calc(4rem - 0.9375rem);
   box-sizing: border-box;
-  /* position: relative; */
 }
 .clientList_img img {
   width: 5.375rem;

@@ -94,7 +94,7 @@
   height: 1.5rem;
   margin-left: 0.3125rem;
   border: 1px #3fb5a9 solid;
-  border-radius: 5px;
+  border-radius: .3125rem;
 }
 .above_under_button_right img {
   width: 0.6875rem;

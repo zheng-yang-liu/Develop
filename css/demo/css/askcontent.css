@@ -29,14 +29,14 @@
   height: 0.0625rem;
   background-color: black;
   opacity: 0.1;
-  margin: 10px 0px;
+  margin: .625rem 0rem;
 }
 .askcontent_state {
   margin-top: 1.25rem;
-  width: 105px;
-  height: 24px;
+  width: 6.5625rem;
+  height: 1.5rem;
   background: #3fb5a9;
-  border-radius: 3px;
+  border-radius: .1875rem;
 }
 
 .askcontent_state div:first-of-type {

@@ -4,9 +4,6 @@
 
 .index_input_ordinary {
   box-sizing: border-box;
-
-  /* background-color: red; */
-  /* padding: 0px 0.9375rem; */
 }
 .enterTheContent {
   padding-top: 1.25rem;
@@ -25,9 +22,6 @@
 
 .index_input_choose {
   box-sizing: border-box;
-
-  /* background-color: red; */
-  /* padding: 0px 0.9375rem; */
 }
 .index_input_choose input {
   box-sizing: border-box;
@@ -41,13 +35,11 @@
 }
 .index_input_choose_box {
   position: relative;
-  /* background-color: red; */
 }
 .iconimg {
   width: 1.1875rem;
   height: 1.1875rem;
   position: absolute;
-  /* z-index: 999; */
   right: 2rem;
   top: 4rem;
 }

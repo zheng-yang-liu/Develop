@@ -1,8 +1,7 @@
 .index_ask_outerBox {
   padding: 1.8rem;
   line-height: 1.25rem;
-  /* box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5); */
-  margin-top: 2px;
+  margin-top: 0.125rem;
 }
 .index_ask_outerBox_above {
   font-size: 0.629rem;
@@ -30,18 +29,17 @@
 }
 .under_middle {
   display: flex;
-  padding: 1.4285rem 0px;
+  padding: 1.4285rem 0rem;
 }
 .under_middle_right {
-  margin-left: 21.6px;
+  margin-left: 1.35rem;
   box-sizing: border-box;
 
-  width: 225px;
-  font-size: 10px;
+  width: 14.0625rem;
+  font-size: 0.625rem;
   font-weight: 400;
   color: #4d4d4d;
   overflow: hidden;
-
 }
 
 .under_middle_left {

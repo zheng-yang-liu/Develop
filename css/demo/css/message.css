@@ -19,12 +19,9 @@
 }
 
 .clientList_img {
-  /* background-color: red; */
-  /* height: 12px; */
   margin-top: 1.25rem;
   padding-left: calc(4rem - 0.9375rem);
   box-sizing: border-box;
-  /* position: relative; */
 }
 .clientList_img img {
   width: 5.375rem;

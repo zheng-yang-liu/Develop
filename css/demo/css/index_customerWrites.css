@@ -1,19 +1,9 @@
-.index_writes_outerBox{
-  
-  padding: 0px 0.9375rem;
+.index_writes_outerBox {
+  padding: 0rem 0.9375rem;
 }
-
-
-
-
-
-
 
 .index_input_ordinary {
   box-sizing: border-box;
-
-  /* background-color: red; */
-  /* padding: 0px 0.9375rem; */
 }
 
 .enterTheContent {
@@ -26,16 +16,13 @@
   margin-top: 0.9375rem;
   font-size: 0.75rem;
   background: rgba(63, 181, 169, 0);
-  border: 1px solid #999999;
-  border-radius: 3px;
+  border: 0.0625rem solid #999999;
+  border-radius: 0.1875rem;
   padding: 0.9375rem 0.63rem 0.9375rem 0.63rem;
 }
 
 .index_input_choose {
   box-sizing: border-box;
-
-  /* background-color: red; */
-  /* padding: 0px 0.9375rem; */
 }
 .index_input_choose input {
   box-sizing: border-box;
@@ -43,19 +30,17 @@
   margin-top: 0.9375rem;
   font-size: 0.75rem;
   background: rgba(63, 181, 169, 0);
-  border: 1px solid #999999;
-  border-radius: 3px;
+  border: 0.0625rem solid #999999;
+  border-radius: 0.1875rem;
   padding: 0.9375rem 0.63rem 0.9375rem 0.63rem;
 }
 .index_input_choose_box {
   position: relative;
-  /* background-color: red; */
 }
 .pullDown {
   width: 0.9125rem;
   height: 0.5375rem;
   position: absolute;
-  /* z-index: 999; */
   right: 2rem;
   top: 4.5rem;
 }
@@ -65,6 +50,6 @@
   margin-top: 1.25rem;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   margin-bottom: 1.2rem;
 }

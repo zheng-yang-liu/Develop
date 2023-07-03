@@ -65,8 +65,8 @@
 }
 .quxiaoIcon {
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: .8125rem;
+  height: .8125rem;
   top: 0.3125rem;
   right: 0.3125rem;
 }

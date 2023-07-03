@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹窗-客户管理</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <script src="../js/OpenAndCloseDialog.js"></script>
+    <!-- dialogCustomerManagement -->
+    
+  </head>
+  <body>
+    <div class="above_under_button_right" onclick="openDialog()">
+      点击展开-弹窗-客户管理
+    </div>
+    <dialog id="dog" class="position_R wp">
+      <div class="win wp">
+        <div class="dialog_middle_content wp flex_wrap flex_between flex_wrap">
+          <div class="choose_List flex_wrap flex_between wp flexUpAndDown">
+            <div class="choose_List_choose">
+              <div class="list_choose_title">进度状态</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">企业性质</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">成交状态</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">企业规模</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">行业类型</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">是否为TOP企业</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+          </div>
+          <div class="siftAndclose wp flex_between flexUpAndDown">
+            <button>筛选</button>
+            <button onclick="closeDialog()">取消</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

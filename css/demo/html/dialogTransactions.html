@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹窗-交易记录</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <script src="../js/OpenAndCloseDialog.js"></script>
+    <!-- dialogTransactions -->
+  </head>
+  <body>
+    <div class="above_under_button_right" onclick="openDialog()">
+      点击展开-弹窗-交易记录
+    </div>
+    <dialog id="dog" class="position_R wp">
+      <div class="win wp">
+        <div class="dialog_middle_content wp flex_wrap flex_between flex_wrap">
+          <div class="choose_List flex_wrap flex_between wp flexUpAndDown">
+            <div class="choose_List_choose">
+              <div class="list_choose_title">交易分类</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/pullDown.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">签约时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">到期时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+
+            <div class="choose_List_choose">
+              <div class="list_choose_title">文件上传时间</div>
+              <div class="choose_list_input position_R">
+                <input type="text" placeholder="请选择" />
+                <img src="../img/time.png" class="pullDownIcon" />
+              </div>
+            </div>
+          </div>
+          <div class="siftAndclose wp flex_between flexUpAndDown">
+            <button>筛选</button>
+            <button onclick="closeDialog()">取消</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

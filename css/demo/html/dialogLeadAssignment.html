@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹窗-线索分配</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <script src="../js/OpenAndCloseDialog.js"></script>
+    <!--  dialogLeadAssignment-->
+  </head>
+  <body>
+    <div class="above_under_button_right" onclick="openDialog()">
+      点击展开-弹窗-线索分配
+    </div>
+    <dialog id="dog" class="position_R choose">
+      <div class="win wp">
+        <div class="dialog_title">选择发送人群</div>
+        <div class="dialog_middle_content wp">
+          <div class="choose_box">
+            <div class="choose_above">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> A院 </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 欧亚学院</label>
+              </div>
+            </div>
+            <div class="choose_middle">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> B院 </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 校领导</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 董事会</label>
+              </div>
+            </div>
+            <div class="choose_under">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoxia.png" class="sanjiao" />
+                <label for="male-radio" style="font-weight: bold"> C院 </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 招生办</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male-radio"
+                />
+                <img src="../img/sanjiaoright.png" class="sanjiao" />
+                <label for="male-radio"> 财务处</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="closeDialog()" class="submit">提交</button>
+      </div>
+      <img
+        src="../img/close.png"
+        class="dialog_close_icon"
+        onclick="closeDialog()"
+      />
+    </dialog>
+  </body>
+</html>

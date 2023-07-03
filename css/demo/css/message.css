@@ -2,15 +2,10 @@
   padding: 1.25rem 0.9375rem;
 }
 .ailentContent_img {
-  /* background-color: red; */
-  /* width: 15.75rem; */
-  /* height: 1.5625rem; */
   font-size: 0.625rem;
   font-weight: 400;
   color: #999999;
-  /* 超出隐藏 */
   overflow: hidden;
-  /* 只有在超出部分的时候才显示 */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;

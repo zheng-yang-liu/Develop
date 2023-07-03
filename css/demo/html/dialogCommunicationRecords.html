@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹窗-沟通记录</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/dialogCenter.css" />
+    <script src="../js/OpenAndCloseDialog.js"></script>
+    <!--  dialogCommunicationRecords-->
+  </head>
+  <body>
+    
+    <div class="above_under_button_right" onclick="openDialog()">
+      点击展开-弹窗-沟通记录
+    </div>
+    <dialog id="dog" class="position_R label">
+      <div class="win wp">
+        <div class="dialog_title">选择标签</div>
+        <div class="dialog_middle_content wp flex_wrap flex_between">
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button>客户标签</button>
+          <button><img src="../img/addimg.png" class="add_icon" /></button>
+        </div>
+        <button onclick="closeDialog()" class="submit">提交</button>
+      </div>
+      <img
+        src="../img/close.png"
+        class="dialog_close_icon"
+        onclick="closeDialog()"
+      />
+    </dialog>
+  </body>
+</html>

@@ -19,6 +19,9 @@
   color: #ffffff;
   margin-top: 0.625rem;
 }
+.user_right{
+  width: 100%;
+}
 .user_right button {
   font-size: 0.625rem;
   font-weight: 500;
@@ -50,17 +53,16 @@
   height: 5.5rem;
   position: absolute;
   z-index: -1;
-  bottom: -30px;
-  right: 50px;
+  bottom: -1.875rem;
+  right: 3.125rem;
 }
 .datanum img:last-of-type {
   width: 5.1875rem;
   height: 5.5rem;
-
   position: absolute;
   z-index: -1;
-  bottom: -30px;
-  right: 50px;
+  bottom: -1.875rem;
+  right: 3.125rem;
 }
 
 .digit {
@@ -111,7 +113,7 @@
   line-height: 0.5625rem;
 }
 .user_right_under {
-  width: 15.75rem;
+  /* width: 15.75rem; */
   margin-top: 0.9375rem;
   font-size: 0.625rem;
   font-family: SourceHanSansCN;

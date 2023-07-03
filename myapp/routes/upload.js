@@ -24,7 +24,7 @@ router.all('*', function (req, res, next) {
   res.header('Content-Type', 'application/json;charset=utf-8')
   next()
 })
-/* GET users listing. */
+
 router.post('/', async function (req, res, next) {
   // 实例化
   var form = new formidable.IncomingForm()
@@ -52,6 +52,10 @@ router.post('/', async function (req, res, next) {
     // 组合文件名==>>存放目录
     const newpath =
       'public/images/' + `${formattedDate}_${random}.` + fileExtension
+    
+    
+    // const newpath =
+    //   '存放的文件地址' + `${formattedDate}_${random}.` + fileExtension
 
     // 保存文件
     fs.rename(oldpath, newpath, (err) => {

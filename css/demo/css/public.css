@@ -1,7 +1,6 @@
 /* 公共样式 */
 
 /* 隐藏所有滚动条 */
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -10,8 +9,6 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
   background-color: #fff;
-  /* height: 100%; */
-  /* background-color: #2eb6aa; */
 }
 /* 背景颜色 */
 .backColorGreen {

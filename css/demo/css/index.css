@@ -18,10 +18,7 @@
   font-weight: 300;
   color: #ffffff;
   margin-top: 0.625rem;
-}
-.user_right{
-  width: 100%;
-}
+} 
 .user_right button {
   font-size: 0.625rem;
   font-weight: 500;
@@ -119,6 +116,7 @@
   font-family: SourceHanSansCN;
   font-weight: 400;
   color: #999999;
+  /* margin-left: auto; */
   line-height: 0.9375rem;
 }
 
